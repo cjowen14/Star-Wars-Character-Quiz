@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "What planet would you like to visit on vacation?",
+        "answer1": "Coruscant",
+        "answer2": "Naboo",
+        "answer3": "Kashyyyk",
+        "answer4": "Takodana",
+        "image1": "../images/Coruscant.png",
+        "image2": "../images/Naboo.png",
+        "image3": "../images/Kashyyyk.jpg",
+        "image4": "../images/Takodana.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Which quality is most important to you?",
+        "answer1": "Bravery",
+        "answer2": "Friendship",
+        "answer3": "Power",
+        "answer4": "Loyalty",
+        "image1": "../images/Bravery.jpg",
+        "image2": "../images/Friendship.jpg",
+        "image3": "../images/Power.jpg",
+        "image4": "../images/Loyalty.jpg"
+    },
+    {
+        "id": 3,
+        "title": "What is your favorite color?",
+        "answer1": "Blue",
+        "answer2": "Red",
+        "answer3": "Purple",
+        "answer4": "Yellow",
+        "image1": "../images/Blue.png",
+        "image2": "../images/Red.png",
+        "image3": "../images/Purple.png",
+        "image4": "../images/Yellow.png"
+    },
+    {
+        "id": 4,
+        "title": "Which droid would you choose?",
+        "answer1": "R2-D2",
+        "answer2": "BB-8",
+        "answer3": "C-3PO",
+        "answer4": "BD-1",
+        "image1": "../images/R2.jpg",
+        "image2": "../images/BB8.jpg",
+        "image3": "../images/3PO.jpg",
+        "image4": "../images/BD1.jpg"
+    }
+]

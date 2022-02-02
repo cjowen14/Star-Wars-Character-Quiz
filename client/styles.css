@@ -1,0 +1,237 @@
+/* All Pages */
+/* *{
+    max-width: 100%;
+    height: auto;
+} */
+body{
+    margin: auto;
+    background-color: black;
+}
+
+header{
+    background-color: gray;
+    height: 14vh;
+    margin: 0;
+    /* position: fixed; */
+    width: 100vw;
+}
+
+header nav{
+    /* background-color: blue; */
+    margin-top: 3vh;
+    float: right;
+
+}
+
+header nav h3 {
+    font-size: 1.4vw;
+    display: inline;
+    margin: 1.5vw;
+    color: white;
+    /* background-color: green; */
+}
+
+#title{
+    /* background-color: red; */
+    margin-right: 8vw;
+    font-size: 2.5vw;
+    color: #fce027ff;
+}
+
+#title a{
+    color: #fce027ff;
+}
+
+
+h3 a{
+    text-decoration: none;
+    color: white;
+}
+
+#logo{
+    width: 10%;
+    height: 5%;
+}
+
+#chars:hover{
+    cursor: pointer;
+}
+
+#questions-list:hover{
+    cursor: pointer;
+}
+
+
+/* Home Page */
+#take{
+    /* background-color: blue; */
+    color: white;
+    position: absolute;
+    margin-left: 21vw;
+    margin-top: 30vh;
+    font-size: 5vw;
+}
+
+#start{
+    background-color: #fce027ff;
+    position: absolute;
+    margin-left: 40vw;
+    margin-top: 50vh;
+    width: 20vw;
+    height: 10vh;
+    font-size: 3vw;
+    color: black;
+}
+
+/* Characters List */
+
+#roster-header{
+    color: white;
+    font-size: 5vw;
+    margin-bottom: 0vw;
+    margin-left: 29vw;
+}
+
+#first-row{
+    display: inline;
+    /* background-color: red; */
+    width: 80vw;
+    height: 50vh;
+}
+
+#second-row{
+    display: inline;
+    /* background-color: blue; */
+    width: 80vw;
+    height: 50vh;
+    margin-top: 100px;
+}
+
+.character{
+    display: inline-block;
+    /* background-color: white; */
+    width: 26%;
+    height: 100%;
+    margin-left: 6%;
+    margin-top: 10vh;
+}
+
+.char-pic{
+    width: 20vw;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 25vh;
+}
+
+.char-pic:hover{
+    cursor: pointer;
+}
+
+.bio{
+    display: inline-block;
+    margin-left: 0.5vw;
+    color: #fce027ff;
+    /* background-color: blue; */
+    margin-bottom: 0;
+}
+
+.break{
+    background-color: black;
+    width: 100%;
+    height: 1%;
+    margin: 0;
+}
+
+/* Quiz Cards */
+.quiz-card{
+    background-color: white;
+    width: 30vw;
+    height: 73vh;
+    margin-left: 33%;
+    margin-top: 0vh;
+}
+
+.pic{
+    width: 100px;
+    height: 100px;
+}
+
+#question-heading{
+    font-size: 300%;
+    text-align: center;
+    /* background-color: red; */
+    margin-bottom: 8%;
+
+}
+
+.answer-box{
+    /* background-color: blue; */
+    width: 12vw;
+    height: 20vh;
+    display: inline-block;
+    margin-bottom: 8%;
+    margin-left: 6%;
+    margin-top: 0;
+}
+
+.answer-pic{
+    width: 100%;
+    height: 100%;
+}
+
+#next,#final{
+    width: 8vw;
+    height: 4vh;
+    margin-bottom: 1%;
+    margin-left: 36%;
+    margin-top: 2%;
+}
+
+
+
+.answer-text{
+    margin-top: 0vh;
+    text-align: center;
+}
+
+.selected{
+    border: red 4px solid;
+}
+
+
+
+/* Footer */
+footer{
+    height: 14vh;
+    width: 100vw;
+}
+
+/* Bio Page */
+#bio-pic{
+    float: left;
+    margin-left: 20vw;
+    margin-top: 25vh;
+}
+
+#the-pic{
+    width: 25vw;
+    height: 30vh;
+}
+
+#bio-info{
+    float: right;
+    margin-right: 25vw;
+    margin-top: 16vh;
+    font-size: 1vw;
+}
+
+/* Questions List */
+#question-section{
+    color: white;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+#ques{
+    margin-top: 3%;
+}

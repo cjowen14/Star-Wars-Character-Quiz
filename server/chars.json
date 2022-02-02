@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "name": "Darth Vader",
+        "planet": "Tatooine",
+        "hair": "None",
+        "image": "https://cdn.vox-cdn.com/thumbor/2RVfQciz45tpu1pFJdgBdYpshM8=/328x0:1475x765/1200x800/filters:focal(328x0:1475x765)/cdn.vox-cdn.com/uploads/chorus_image/image/49933345/darth_vader.0.0.png",
+        "weapon": "Red Lightsaber",
+        "birthday": "42 BBY",
+        "movie": "The Empire Strikes Back",
+        "height": "6ft 8in",
+        "vehicle": "Devastator"
+    },
+    {
+        "id": 2,
+        "name": "Obi Wan Kenobi",
+        "planet": "Stewjon",
+        "hair": "Auburn",
+        "image": "https://www.nme.com/wp-content/uploads/2019/10/2019_obiwan_2000x1270.png",
+        "weapon": "Blue Lightsaber",
+        "birthday": "57 BBY",
+        "movie": "Revenge of the Sith",
+        "height": "5ft 11in",
+        "vehicle": "Venator-class Star Destroyer"
+    },
+    {
+        "id": 3,
+        "name": "Rey Skywalker",
+        "planet": "Jakku",
+        "hair": "brown",
+        "image": "https://www.fjackets.com/blog/wp-content/uploads/2019/04/rey-rise-of-the-skywalker.jpg",
+        "weapon": "Blue/Yellow Lightsaber",
+        "birthday": "15 ABY",
+        "movie": "The Rise of Skywalker",
+        "height": "5ft 5in",
+        "vehicle": "Millennium Falcon"
+    },
+    {
+        "id": 4,
+        "name": "Jar Jar Binks",
+        "planet": "Naboo",
+        "hair": "None",
+        "image": "https://th.bing.com/th/id/R.c3ac76f45254d93f36af955cedb1e589?rik=%2f8hyQocaeDXkIg&riu=http%3a%2f%2fstatic.comicvine.com%2fuploads%2foriginal%2f11127%2f111278448%2f5099945-1615802769-binks.jpg&ehk=qZl4mc7spaIO%2bZ1vqV7PwLdC8%2fyaBeHk8k57MzLHZes%3d&risl=&pid=ImgRaw&r=0",
+        "weapon": "Nope",
+        "birthday": "52 BBY",
+        "movie": "The Phantom Menace",
+        "height": "6ft 5in",
+        "vehicle": "Wherever he is welcomed"
+    },
+    {
+        
+        "id": 5,
+        "name": "Yoda",
+        "planet": "Unkown",
+        "hair": "green",
+        "image": "https://miro.medium.com/max/3072/0*bv4qdUZKu9aqt15g.jpg",
+        "weapon": "Green Lightsaber",
+        "birthday": "896 BBY",
+        "movie": "The Empire Strikes Back",
+        "height": "2ft 2in",
+        "vehicle": "Acclamator-class transport"
+        
+    },
+    {
+        "id": 6,
+        "name": "Boba Fett",
+        "planet": "Kamino",
+        "hair": "N/A",
+        "image": "https://static2.cbrimages.com/wordpress/wp-content/uploads/2020/12/mandalorian-boba-post-credits2.jpg",
+        "weapon": "EE-3 Blaster",
+        "birthday": "32 BBY",
+        "movie": "Return of the Jedi",
+        "height": "6ft 0in",
+        "vehicle": "Slave 1"
+    }
+]
