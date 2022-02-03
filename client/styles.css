@@ -1,8 +1,4 @@
 /* All Pages */
-/* *{
-    max-width: 100%;
-    height: auto;
-} */
 body{
     margin: auto;
     background-color: black;
@@ -14,16 +10,17 @@ header{
     background-image: url(../Images/New-Stars.jpg);
     height: 14vh;
     margin: 0;
-    /* position: fixed; */
+    width: 100vw;
+}
+
+footer{
+    height: 14vh;
     width: 100vw;
 }
 
 header nav{
-    /* background-color: blue; */
     margin-top: 2vh;
     float: right;
-    /* margin-left: 12vw; */
-
 }
 
 header nav h3 {
@@ -31,11 +28,9 @@ header nav h3 {
     display: inline;
     margin: 1.5vw;
     color: white;
-    /* background-color: green; */
 }
 
 #title{
-    /* background-color: red; */
     margin-right: 18vw;
     font-size: 2.5vw;
     color: #fce027ff;
@@ -44,7 +39,6 @@ header nav h3 {
 #title a{
     color: #fce027ff;
 }
-
 
 h3 a{
     text-decoration: none;
@@ -67,7 +61,6 @@ h3 a{
 
 /* Home Page */
 #take{
-    /* background-color: blue; */
     color: white;
     position: absolute;
     margin-left: 21vw;
@@ -86,8 +79,8 @@ h3 a{
     color: black;
 }
 
-/* Characters List */
 
+/* Characters List */
 #roster-header{
     color: white;
     font-size: 3vw;
@@ -98,14 +91,12 @@ h3 a{
 
 #first-row{
     display: inline;
-    /* background-color: red; */
     width: 80vw;
     height: 50vh;
 }
 
 #second-row{
     display: inline;
-    /* background-color: blue; */
     width: 80vw;
     height: 50vh;
     margin-top: 100px;
@@ -113,7 +104,6 @@ h3 a{
 
 .character{
     display: inline-block;
-    /* background-color: white; */
     width: 26%;
     height: 100%;
     margin-left: 6%;
@@ -145,6 +135,7 @@ h3 a{
     margin: 0;
 }
 
+
 /* Quiz Cards */
 .quiz-card{
     background-color: white;
@@ -162,13 +153,11 @@ h3 a{
 #question-heading{
     font-size: 300%;
     text-align: center;
-    /* background-color: red; */
     margin-bottom: 8%;
 
 }
 
 .answer-box{
-    /* background-color: blue; */
     width: 12vw;
     height: 20vh;
     display: inline-block;
@@ -190,8 +179,6 @@ h3 a{
     margin-top: 2%;
 }
 
-
-
 .answer-text{
     margin-top: 0vh;
     text-align: center;
@@ -201,13 +188,6 @@ h3 a{
     border: red 4px solid;
 }
 
-
-
-
-footer{
-    height: 14vh;
-    width: 100vw;
-}
 
 /* Bio Page */
 #bio-pic{
@@ -233,8 +213,8 @@ footer{
     display: inline-block;
     margin-right: 1vw;
     color: #fce027ff;
-
 }
+
 
 /* Questions List */
 #question-section{
@@ -261,15 +241,15 @@ footer{
     font-size: 3vh;
     font-style: italic;
 }
-/* Results */
 
+
+/* Results */
 #results{
     display: flexbox;
     justify-content: center;
 }
 
 #results-pic{
-
     height: 50vh;
     width: 40vw;
     margin-left: 5vw;
@@ -277,13 +257,11 @@ footer{
 }
 
 #results-heading{
-
     color: white;
     text-align: center;
     font-size: 8vh;
     margin-bottom: 4vh;
 }
-
 
 #results-info{
     display: inline-block;
@@ -294,6 +272,7 @@ footer{
     text-align: center;
 }
 
+
 /* Your characters */
 .your-pic{
     width: 20vw;
@@ -301,6 +280,7 @@ footer{
     margin-top: 2%;
     height: 25vh;
 }
+
 #your-characters:hover{
     cursor: pointer;
 }

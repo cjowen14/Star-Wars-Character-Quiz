@@ -135,7 +135,7 @@ function listQuestions(){
 function createQuizCard(data){
         //run for all questions except for the last
         // console.log(index);
-        if(question < 4){
+        if(question < 10){
             mainBody.innerHTML = `
                 <section class="quiz-card">
                     <h1 id="question-heading">${data[index].question}</h1>
@@ -226,6 +226,12 @@ function results(){
         // console.log(charStorage)
         let charData = [];
         const data = res.data;
+        console.log('Total Vader: ' + finalVader);
+        console.log('Total Yoda: ' + finalYoda);
+        console.log('Total Rey: ' + finalRey);
+        console.log('Total Kenobi: ' + finalKenobi);
+        console.log('Total Jar Jar: ' + finalJar);
+        console.log('Total Boba: ' + finalBoba);
         if(finalVader > finalKenobi && finalVader > finalRey && finalVader > finalYoda && finalVader > finalJar && finalVader > finalBoba){
             charData = data[0];
         }
@@ -412,17 +418,10 @@ function next(){
         finalYoda+=yodaCount;
         finalJar+=jarCount;
         finalBoba+=bobaCount;
-        // console.log('Total Vader: ' + finalVader);
-        // console.log('Total Yoda: ' + finalYoda);
-        // console.log('Total Rey: ' + finalRey);
-        // console.log('Total Kenobi: ' + finalKenobi);
-        // console.log('Total Jar Jar: ' + finalJar);
-        // console.log('Total Boba: ' + finalBoba);
+        
         createQuizCard(data);
     })
 }
-
-
 
 
 //count how many choices a user has selected for each character
@@ -619,6 +618,277 @@ function counter(i){
             jarCount = 0;
             bobaCount = 0;
             reyCount++;
+        }
+    }
+     //Question 5 party
+     else if(question === 5){
+        //first answer
+        if(i === 0){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            jarCount++;
+            vaderCount++;
+        }
+        //second answer
+        else if(i === 1){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            reyCount++;
+            kenobiCount++;
+        }
+        //third answer
+        else if(i === 2){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            bobaCount++;
+        }
+        //fourth answer
+        else if(i === 3){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            yodaCount++;
+        }
+    }
+     //Question 6 job
+     else if(question === 6){
+        //first answer
+        if(i === 0){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            yodaCount++;
+        }
+        //second answer
+        else if(i === 1){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            bobaCount++;
+        }
+        //third answer
+        else if(i === 2){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            vaderCount++;
+            reyCount++;
+        }
+        //fourth answer
+        else if(i === 3){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            kenobiCount++;
+            jarCount++;
+        }
+    }
+     //Question 7 food
+     else if(question === 7){
+        //first answer
+        if(i === 0){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            vaderCount++;
+            kenobiCount++;
+        }
+        //second answer
+        else if(i === 1){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            bobaCount++;
+            yodaCount++;
+        }
+        //third answer
+        else if(i === 2){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            vaderCount++;
+            reyCount++;
+        }
+        //fourth answer
+        else if(i === 3){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            jarCount++;
+        }
+    }
+     //Question 8 weakness
+     else if(question === 8){
+        //first answer
+        if(i === 0){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            vaderCount++;
+        }
+        //second answer
+        else if(i === 1){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            reyCount++;
+            bobaCount++;
+        }
+        //third answer
+        else if(i === 2){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            jarCount++;
+            kenobiCount++;
+        }
+        //fourth answer
+        else if(i === 3){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            yodaCount++;
+        }
+    }
+     //Question 9 season
+     else if(question === 9){
+        //first answer
+        if(i === 0){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            yodaCount++;
+        }
+        //second answer
+        else if(i === 1){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            jarCount++;
+        }
+        //third answer
+        else if(i === 2){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            reyCount++;
+            kenobiCount++;
+        }
+        //fourth answer
+        else if(i === 3){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            vaderCount++;
+            bobaCount++;
+        }
+    }
+     //Question 10 music
+     else if(question === 10){
+        //first answer
+        if(i === 0){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            bobaCount++;
+            vaderCount++;
+        }
+        //second answer
+        else if(i === 1){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            jarCount++;
+            reyCount++;
+        }
+        //third answer
+        else if(i === 2){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            yodaCount++;
+        }
+        //fourth answer
+        else if(i === 3){
+            vaderCount = 0;
+            kenobiCount = 0;
+            reyCount = 0;
+            yodaCount = 0;
+            jarCount = 0;
+            bobaCount = 0;
+            kenobiCount++;
         }
     }
     
