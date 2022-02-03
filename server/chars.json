@@ -4,61 +4,66 @@
         "name": "Darth Vader",
         "planet": "Tatooine",
         "hair": "None",
-        "image": "https://cdn.vox-cdn.com/thumbor/2RVfQciz45tpu1pFJdgBdYpshM8=/328x0:1475x765/1200x800/filters:focal(328x0:1475x765)/cdn.vox-cdn.com/uploads/chorus_image/image/49933345/darth_vader.0.0.png",
+        "image": "../images/Vader.jpg",
         "weapon": "Red Lightsaber",
         "birthday": "42 BBY",
         "movie": "The Empire Strikes Back",
         "height": "6ft 8in",
-        "vehicle": "Devastator"
+        "vehicle": "Devastator",
+        "result": "Darth Vader is the dark Lord of the Sith! He seeks ultimate power and is only superseded by his master, Emperor Palpatine. Once a versatile warrior in the Clone Wars, Vader has since adopted his style to be more tactical, precise, and of course full of power. The galaxy fears Vader for his tenacity, intimidation, and not knowing who exactly is behind the mask. He feeds off of this fear and it only makes him stronger."
     },
     {
         "id": 2,
         "name": "Obi Wan Kenobi",
         "planet": "Stewjon",
         "hair": "Auburn",
-        "image": "https://www.nme.com/wp-content/uploads/2019/10/2019_obiwan_2000x1270.png",
+        "image": "../images/Kenobi.png",
         "weapon": "Blue Lightsaber",
         "birthday": "57 BBY",
         "movie": "Revenge of the Sith",
         "height": "5ft 11in",
-        "vehicle": "Venator-class Star Destroyer"
+        "vehicle": "Venator-class Star Destroyer",
+        "result": "Obi-Wan is a stalwart Jedi who sticks to the code and strives to maintain peace before violence. If provoked to violence, he is a skilled fighter who uses finesse more than athleticism to defeat his opponents. He was a respected leader during the Clone Wars, one who many clones and Jedi relied on for important missions and duties. He is well liked and can connect with almost anyone with is easy going personality."
     },
     {
         "id": 3,
         "name": "Rey Skywalker",
         "planet": "Jakku",
         "hair": "brown",
-        "image": "https://www.fjackets.com/blog/wp-content/uploads/2019/04/rey-rise-of-the-skywalker.jpg",
+        "image": "../images/Rey.jpg",
         "weapon": "Blue/Yellow Lightsaber",
         "birthday": "15 ABY",
         "movie": "The Rise of Skywalker",
         "height": "5ft 5in",
-        "vehicle": "Millennium Falcon"
+        "vehicle": "Millennium Falcon",
+        "result": "Born from a lineage of evil, Rey took a much different approach to her abilities with the Force when compared to her grandfather. She is caring, compassionate, and is always willing to do what is best for her friends. She is a quick learner and revered by the Resistance for her bravery during their fight against  the First Order, despite her inexperience. She is the future of the Jedi Order and many people are willing to follow her leadership."
     },
     {
         "id": 4,
         "name": "Jar Jar Binks",
         "planet": "Naboo",
         "hair": "None",
-        "image": "https://th.bing.com/th/id/R.c3ac76f45254d93f36af955cedb1e589?rik=%2f8hyQocaeDXkIg&riu=http%3a%2f%2fstatic.comicvine.com%2fuploads%2foriginal%2f11127%2f111278448%2f5099945-1615802769-binks.jpg&ehk=qZl4mc7spaIO%2bZ1vqV7PwLdC8%2fyaBeHk8k57MzLHZes%3d&risl=&pid=ImgRaw&r=0",
+        "image": "../images/JarJar.jpg",
         "weapon": "Nope",
         "birthday": "52 BBY",
         "movie": "The Phantom Menace",
         "height": "6ft 5in",
-        "vehicle": "Wherever he is welcomed"
+        "vehicle": "Wherever he is welcomed",
+        "result": "Once banished by his Gungan people, Jar Jar became somewhat of a hero during the Republic's fight against the Separatist army. Often seen as clumsy and unintelligent, Jar Jar tends to surprise a lot of people with his skills and knowledge, even though some of that may be on accident. He has gained a lot of respect since working with the Republic and that has lot to do with his fun-loving look at life where he is just wanting to find joy."
     },
     {
         
         "id": 5,
         "name": "Yoda",
-        "planet": "Unkown",
+        "planet": "Unknown",
         "hair": "green",
-        "image": "https://miro.medium.com/max/3072/0*bv4qdUZKu9aqt15g.jpg",
+        "image": "../images/Yoda.jpg",
         "weapon": "Green Lightsaber",
         "birthday": "896 BBY",
         "movie": "The Empire Strikes Back",
         "height": "2ft 2in",
-        "vehicle": "Acclamator-class transport"
+        "vehicle": "Acclamator-class transport",
+        "result": "Having trained many generations of Jedi, Yoda is seen as one of the wisest beings in the galaxy. While he may in his elder years, he enjoys passing on his knowledge to the future generations in order to maintain peace across the galaxy. When necessary he is a skilled warrior, despite his size. Unlike most older generation Force users, Yoda relies on his athleticism to aid him in combat. He is also quick witted and can lighten the mood when things get tense."
         
     },
     {
@@ -66,11 +71,12 @@
         "name": "Boba Fett",
         "planet": "Kamino",
         "hair": "N/A",
-        "image": "https://static2.cbrimages.com/wordpress/wp-content/uploads/2020/12/mandalorian-boba-post-credits2.jpg",
+        "image": "../images/Boba.jpg",
         "weapon": "EE-3 Blaster",
         "birthday": "32 BBY",
         "movie": "Return of the Jedi",
         "height": "6ft 0in",
-        "vehicle": "Slave 1"
+        "vehicle": "Slave 1",
+        "result": "Despite being respected among scum and villainy throughout the empire, Boba Fett has a lot of compassion towards his fellow beings. He is well suited for combat and has an array of gadgets to ensure his victory, so much that the Sarlac Pit couldn't contain him. Once a bounty hunter solely in it for the money, he now looks to ensure peace in his domain on Tatooine. He used to be a loner but has come out of his shell a little bit to accept help from friends."
     }
 ]

@@ -6,10 +6,12 @@
 body{
     margin: auto;
     background-color: black;
+    background-image: url(../images/New-Stars.jpg);
 }
 
 header{
     background-color: gray;
+    background-image: url(../Images/New-Stars.jpg);
     height: 14vh;
     margin: 0;
     /* position: fixed; */
@@ -18,8 +20,9 @@ header{
 
 header nav{
     /* background-color: blue; */
-    margin-top: 3vh;
+    margin-top: 2vh;
     float: right;
+    /* margin-left: 12vw; */
 
 }
 
@@ -33,7 +36,7 @@ header nav h3 {
 
 #title{
     /* background-color: red; */
-    margin-right: 8vw;
+    margin-right: 18vw;
     font-size: 2.5vw;
     color: #fce027ff;
 }
@@ -57,7 +60,7 @@ h3 a{
     cursor: pointer;
 }
 
-#questions-list:hover{
+#questions-list:hover,#title:hover,#logo:hover{
     cursor: pointer;
 }
 
@@ -87,9 +90,10 @@ h3 a{
 
 #roster-header{
     color: white;
-    font-size: 5vw;
+    font-size: 3vw;
     margin-bottom: 0vw;
-    margin-left: 29vw;
+    margin-left: 38vw;
+    margin-top: 10vh;
 }
 
 #first-row{
@@ -128,11 +132,10 @@ h3 a{
 }
 
 .bio{
-    display: inline-block;
-    margin-left: 0.5vw;
+    margin-right: 5.5vw;
     color: #fce027ff;
-    /* background-color: blue; */
     margin-bottom: 0;
+    text-align: center;
 }
 
 .break{
@@ -200,7 +203,7 @@ h3 a{
 
 
 
-/* Footer */
+
 footer{
     height: 14vh;
     width: 100vw;
@@ -220,18 +223,95 @@ footer{
 
 #bio-info{
     float: right;
-    margin-right: 25vw;
-    margin-top: 16vh;
+    margin-right: 20vw;
+    margin-top: 10vh;
     font-size: 1vw;
+    font-weight: bolder;
+}
+
+.big-bio{
+    display: inline-block;
+    margin-right: 1vw;
+    color: #fce027ff;
+
 }
 
 /* Questions List */
 #question-section{
     color: white;
     margin-left: 20%;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 #ques{
     margin-top: 3%;
+    color: #fce027ff;
+}
+
+#list-header{
+    color: white;
+    font-size: 3vw;
+    margin-top: 10vh;
+    margin-bottom: 3vw;
+    margin-left: 38vw;
+}
+
+.list-answer{
+    color: white;
+    font-size: 3vh;
+    font-style: italic;
+}
+/* Results */
+
+#results{
+    display: flexbox;
+    justify-content: center;
+}
+
+#results-pic{
+
+    height: 50vh;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 3vw;
+}
+
+#results-heading{
+
+    color: white;
+    text-align: center;
+    font-size: 8vh;
+    margin-bottom: 4vh;
+}
+
+
+#results-info{
+    display: inline-block;
+    color: #fce027ff;
+    width: 40vw;
+    font-size: 2.25vw;
+    margin-left: 5vw;
+    text-align: center;
+}
+
+/* Your characters */
+.your-pic{
+    width: 20vw;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 25vh;
+}
+#your-characters:hover{
+    cursor: pointer;
+}
+
+.delete{
+    margin-left: 8.25vw;
+    margin-top: 1vh;
+    width: 4vw;
+    height: 3vh;
+    color: #fce027ff;
+    background-color: black;
+    border: white 2px solid;
+    font-size: 0.6vw;
 }
