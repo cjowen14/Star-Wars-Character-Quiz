@@ -17,18 +17,6 @@ let reyCount = 0;
 let yodaCount = 0;
 let jarCount = 0;
 let bobaCount = 0;
-let ahsokaCount = 0;
-let hanCount = 0;
-let maulCount = 0;
-let kyloCount = 0;
-let mandoCount = 0;
-let padmeCount = 0;
-let finalAhsoka = 0;
-let finalHan = 0;
-let finalMaul = 0;
-let finalKylo = 0;
-let finalMando = 0;
-let finalPadme = 0;
 let finalVader = 0;
 let finalKenobi = 0;
 let finalRey = 0;
@@ -152,12 +140,6 @@ function next(){
             finalYoda+=yodaCount;
             finalJar+=jarCount;
             finalBoba+=bobaCount;
-            finalAhsoka+=ahsokaCount;
-            finalHan+=hanCount;
-            finalMaul+=maulCount;
-            finalKylo+=kyloCount;
-            finalMando+=mandoCount;
-            finalPadme+=padmeCount;
             createQuizCard(data);
         }) 
     }
@@ -184,15 +166,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             vaderCount++;
-            ahsokaCount++;
-            maulCount++;
+            yodaCount++;
         }
         //second answer
         else if(i === 1){
@@ -202,16 +177,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             kenobiCount++;
             jarCount++;
-            kyloCount++;
-            padmeCount++;
         }
         //third answer
         else if(i === 2){
@@ -221,15 +188,9 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
+            reyCount++;
             bobaCount++;
             yodaCount++;
-            mandoCount++;
         }
         //fourth answer
         else if(i === 3){
@@ -239,14 +200,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
+            bobaCount++;
             reyCount++;
-            hanCount++;
         }
     }
     //Question 2
@@ -259,15 +214,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             kenobiCount++;
             reyCount++;
-            hanCount++;
         }
         //second answer
         else if(i === 1){
@@ -277,15 +225,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             yodaCount++;
             reyCount++;
-            padmeCount++;
         }
         //third answer
         else if(i === 2){
@@ -295,16 +236,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             vaderCount++;
             bobaCount++;
-            maulCount++;
-            kyloCount++;
         }
         //fourth answer
         else if(i === 3){
@@ -314,15 +247,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             jarCount++;
-            ahsokaCount++;
-            mandoCount++;
         }
     }
     //Question 3
@@ -335,15 +260,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             kenobiCount++;
             yodaCount++;
-            padmeCount++;
         }
         //second answer
         else if(i === 1){
@@ -353,14 +271,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             vaderCount++;
-            kyloCount++;
         }
         //third answer
         else if(i === 2){
@@ -370,15 +281,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             bobaCount++;
-            mandoCount++;
-            maulCount++;
         }
         //fourth answer
         else if(i === 3){
@@ -388,16 +291,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             jarCount++;
             reyCount++;
-            ahsokaCount++;
-            hanCount++;
         }
     }
     //Question 4
@@ -410,16 +305,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             kenobiCount++;
             yodaCount++;
-            jarCount++;
-            ahsokaCount++;
         }
         //second answer
         else if(i === 1){
@@ -429,15 +316,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             reyCount++;
-            kyloCount++;
-            padmeCount++
+            jarCount++;
         }
         //third answer
         else if(i === 2){
@@ -447,15 +327,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             vaderCount++;
             bobaCount++;
-            hanCount++;
         }
         //fourth answer
         else if(i === 3){
@@ -465,15 +338,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             reyCount++;
-            maulCount++;
-            mandoCount++;
         }
     }
      //Question 5
@@ -486,14 +351,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            yodaCount++;
-            padmeCount++;
+            jarCount++;
+            vaderCount++;
         }
         //second answer
         else if(i === 1){
@@ -503,16 +362,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            bobaCount++;
-            mandoCount++;
-            ahsokaCount++;
-            maulCount++;
+            reyCount++;
+            kenobiCount++;
         }
         //third answer
         else if(i === 2){
@@ -522,15 +373,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            vaderCount++;
-            reyCount++;
-            hanCount++;
+            bobaCount++;
         }
         //fourth answer
         else if(i === 3){
@@ -540,15 +383,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            kenobiCount++;
-            jarCount++;
-            kyloCount++;
+            yodaCount++;
         }
     }
      //Question 6
@@ -561,15 +396,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            vaderCount++;
-            kenobiCount++;
-            mandoCount++;
+            yodaCount++;
         }
         //second answer
         else if(i === 1){
@@ -579,15 +406,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             bobaCount++;
-            yodaCount++;
-            ahsokaCount++;
         }
         //third answer
         else if(i === 2){
@@ -597,15 +416,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
+            vaderCount++;
             reyCount++;
-            maulCount++;
-            padmeCount++;
         }
         //fourth answer
         else if(i === 3){
@@ -615,15 +427,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
+            kenobiCount++;
             jarCount++;
-            kyloCount++;
-            hanCount++;
         }
     }
      //Question 7
@@ -636,15 +441,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             vaderCount++;
-            kyloCount++;
-            maulCount++;
+            kenobiCount++;
         }
         //second answer
         else if(i === 1){
@@ -654,16 +452,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             bobaCount++;
-            reyCount++;
-            ahsokaCount++;
-            mandoCount++;
+            yodaCount++;
         }
         //third answer
         else if(i === 2){
@@ -673,15 +463,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            jarCount++;
-            kenobiCount++;
-            hanCount++;
+            vaderCount++;
+            reyCount++;
         }
         //fourth answer
         else if(i === 3){
@@ -691,14 +474,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            yodaCount++;
-            padmeCount++;
+            jarCount++;
         }
     }
      //Question 8
@@ -711,15 +487,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            yodaCount++;
-            padmeCount++;
-            mandoCount++;
+            vaderCount++;
         }
         //second answer
         else if(i === 1){
@@ -729,15 +497,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            jarCount++;
-            maulCount++;
-            kyloCount++;
+            reyCount++;
+            bobaCount++;
         }
         //third answer
         else if(i === 2){
@@ -747,16 +508,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            reyCount++;
+            jarCount++;
             kenobiCount++;
-            ahsokaCount++;
-            hanCount++;
         }
         //fourth answer
         else if(i === 3){
@@ -766,14 +519,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            vaderCount++;
-            bobaCount++;
+            yodaCount++;
         }
     }
      //Question 9
@@ -786,15 +532,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            jarCount++;
-            maulCount++;
-            hanCount++;
+            yodaCount++;
         }
         //second answer
         else if(i === 1){
@@ -804,16 +542,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            reyCount++;
-            kenobiCount++;
-            ahsokaCount++;
-            padmeCount++;
+            jarCount++;
         }
         //third answer
         else if(i === 2){
@@ -823,14 +552,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
-            bobaCount++;
-            mandoCount++;
+            reyCount++;
+            kenobiCount++;
         }
         //fourth answer
         else if(i === 3){
@@ -840,15 +563,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             vaderCount++;
-            yodaCount++;
-            kyloCount++;
+            bobaCount++;
         }
     }
      //Question 10
@@ -861,15 +577,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             bobaCount++;
             vaderCount++;
-            kyloCount++;
         }
         //second answer
         else if(i === 1){
@@ -879,16 +588,8 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             jarCount++;
             reyCount++;
-            maulCount++;
-            ahsokaCount++;
         }
         //third answer
         else if(i === 2){
@@ -898,15 +599,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             yodaCount++;
-            hanCount++;
-            mandoCount++;
         }
         //fourth answer
         else if(i === 3){
@@ -916,14 +609,7 @@ function counter(i){
             yodaCount = 0;
             jarCount = 0;
             bobaCount = 0;
-            ahsokaCount = 0;
-            hanCount = 0;
-            maulCount = 0;
-            kyloCount = 0;
-            mandoCount = 0;
-            padmeCount = 0;
             kenobiCount++;
-            padmeCount++;
         }
     }  
 }
@@ -954,80 +640,38 @@ function results(){
             console.log('Total Kenobi: ' + finalKenobi);
             console.log('Total Jar Jar: ' + finalJar);
             console.log('Total Boba: ' + finalBoba);
-            console.log('Total Ahsoka:' + finalAhsoka);
-            console.log('Total Han:' + finalHan);
-            console.log('Total Maul:' + finalMaul);
-            console.log('Total Kylo:' + finalKylo);
-            console.log('Total Mando:' + finalMando);
-            console.log('Total Padme:' + finalPadme);
-            if(finalVader > finalKenobi && finalVader > finalRey && finalVader > finalYoda && finalVader > finalJar && finalVader > finalBoba && finalVader > finalAhsoka && finalVader > finalKylo && finalVader > finalHan && finalVader > finalPadme && finalVader > finalMando && finalVader > finalMaul){
+            if(finalVader > finalKenobi && finalVader > finalRey && finalVader > finalYoda && finalVader > finalJar && finalVader > finalBoba){
                 charData = data[0];
             }
-            else if(finalKenobi > finalVader && finalKenobi > finalRey && finalKenobi > finalYoda && finalKenobi > finalJar && finalKenobi > finalBoba && finalKenobi > finalAhsoka && finalKenobi > finalKylo && finalKenobi > finalHan && finalKenobi > finalPadme && finalKenobi > finalMando && finalKenobi > finalMaul){
+            else if(finalKenobi > finalVader && finalKenobi > finalRey && finalKenobi > finalYoda && finalKenobi > finalJar && finalKenobi > finalBoba){
                 charData = data[1];
             }
-            else if(finalRey > finalVader && finalRey > finalKenobi && finalRey > finalYoda && finalRey > finalJar && finalRey > finalBoba && finalRey > finalAhsoka && finalRey > finalKylo && finalRey > finalHan && finalRey > finalPadme && finalRey > finalMando && finalRey > finalMaul){
+            else if(finalRey > finalVader && finalRey > finalKenobi && finalRey > finalYoda && finalRey > finalJar && finalRey > finalBoba){
                 charData = data[2];
             }
-            else if(finalJar > finalVader && finalJar > finalKenobi && finalJar > finalRey && finalJar > finalYoda && finalJar > finalBoba && finalJar > finalAhsoka && finalJar > finalKylo && finalJar > finalHan && finalJar > finalPadme && finalJar > finalMando && finalJar > finalMaul){
+            else if(finalJar > finalVader && finalJar > finalKenobi && finalJar > finalRey && finalJar > finalYoda && finalJar > finalBoba){
                 charData = data[3];
             }
-            else if(finalYoda > finalVader && finalYoda > finalKenobi && finalYoda > finalRey && finalYoda > finalJar && finalYoda > finalBoba && finalYoda > finalAhsoka && finalYoda > finalKylo && finalYoda > finalHan && finalYoda > finalPadme && finalYoda > finalMando && finalYoda > finalMaul){
+            else if(finalYoda > finalVader && finalYoda > finalKenobi && finalYoda > finalRey && finalYoda > finalJar && finalYoda > finalBoba){
                 charData = data[4];
             }
-            else if(finalBoba > finalVader && finalBoba > finalKenobi && finalBoba > finalRey && finalBoba > finalJar && finalBoba > finalYoda && finalBoba > finalAhsoka && finalBoba > finalKylo && finalBoba > finalHan && finalBoba > finalPadme && finalBoba > finalMando && finalBoba > finalMaul){
+            else if(finalBoba > finalVader && finalBoba > finalKenobi && finalBoba > finalRey && finalBoba > finalJar && finalBoba > finalYoda){
                 charData = data[5];
             }
-            else if(finalAhsoka > finalVader && finalAhsoka > finalKenobi && finalAhsoka > finalRey && finalAhsoka> finalJar && finalAhsoka > finalYoda && finalAhsoka > finalBoba && finalAhsoka > finalKylo && finalAhsoka > finalHan && finalAhsoka > finalPadme && finalAhsoka > finalMando && finalAhsoka > finalMaul){
-                charData = data[6];
-            }
-            else if(finalHan > finalVader && finalHan > finalKenobi && finalHan > finalRey && finalHan > finalJar && finalHan > finalYoda && finalHan > finalAhsoka && finalHan > finalKylo && finalHan > finalBoba && finalHan > finalPadme && finalHan > finalMando && finalHan > finalMaul){
-                charData = data[7];
-            }
-            else if(finalMaul > finalVader && finalMaul > finalKenobi && finalMaul > finalRey && finalMaul > finalJar && finalMaul > finalYoda && finalMaul > finalAhsoka && finalMaul > finalKylo && finalMaul > finalHan && finalMaul > finalPadme && finalMaul > finalMando && finalMaul > finalBoba){
-                charData = data[8];
-            }
-            else if(finalKylo > finalVader && finalKylo > finalKenobi && finalKylo > finalRey && finalKylo > finalJar && finalKylo > finalYoda && finalKylo > finalAhsoka && finalKylo > finalBoba && finalKylo > finalHan && finalKylo > finalPadme && finalKylo > finalMando && finalKylo > finalMaul){
-                charData = data[9];
-            }
-            else if(finalMando > finalVader && finalMando > finalKenobi && finalMando > finalRey && finalMando > finalJar && finalMando > finalYoda && finalMando > finalAhsoka && finalMando > finalKylo && finalMando > finalHan && finalMando > finalPadme && finalMando > finalBoba && finalMando > finalMaul){
-                charData = data[10];
-            }
-            else if(finalPadme > finalVader && finalPadme > finalKenobi && finalPadme > finalRey && finalPadme > finalJar && finalPadme > finalYoda && finalPadme > finalAhsoka && finalPadme > finalKylo && finalPadme > finalHan && finalPadme > finalBoba && finalPadme > finalMando && finalPadme > finalMaul){
-                charData = data[11];
-            }
-            else if(finalYoda === finalVader || finalYoda === finalKenobi || finalYoda === finalRey || finalYoda === finalJar || finalYoda === finalBoba || finalYoda === finalKylo || finalYoda === finalAhsoka || finalYoda === finalHan || finalYoda === finalPadme || finalYoda === finalMando || finalYoda === finalMaul){
+            else if(finalYoda === finalVader || finalYoda === finalKenobi || finalYoda === finalRey || finalYoda === finalJar || finalYoda === finalBoba){
                 charData = data[4];
             }
-            else if(finalKenobi === finalVader || finalKenobi === finalRey || finalKenobi === finalJar || finalKenobi === finalBoba || finalKenobi === finalKylo || finalKenobi === finalAhsoka || finalKenobi === finalHan || finalKenobi === finalPadme || finalKenobi === finalMando || finalKenobi === finalMaul){
+            else if(finalKenobi === finalVader || finalKenobi === finalRey || finalKenobi === finalJar || finalKenobi === finalBoba){
                 charData = data[1];
             }
-            else if(finalVader === finalJar || finalVader === finalBoba || finalVader === finalRey || finalVader === finalKylo || finalVader === finalAhsoka || finalVader === finalHan || finalVader === finalPadme || finalVader === finalMando || finalVader === finalMaul){
+            else if(finalVader === finalJar || finalVader === finalBoba || finalVader === finalRey){
                 charData = data[0];
             }
-            else if(finalRey === finalJar || finalRey === finalBoba || finalRey === finalKylo || finalRey === finalAhsoka || finalRey === finalHan || finalRey === finalPadme || finalRey === finalMando || finalRey === finalMaul){
+            else if(finalRey === finalJar || finalRey === finalBoba){
                 charData = data[2];
             }
-            else if(finalAhsoka === finalHan || finalAhsoka === finalMaul || finalAhsoka === finalKylo || finalAhsoka === finalMando || finalAhsoka === finalBoba || finalAhsoka === finalPadme || finalAhsoka === finalJar){
-                charData = data[6];
-            }
-            else if(finalHan === finalMaul || finalHan === finalKylo || finalHan === finalMando || finalHan === finalBoba || finalHan === finalPadme || finalHan === finalJar){
-                charData = data[7];
-            }
-            else if(finalMaul === finalKylo || finalMaul ===  finalMando || finalMaul === finalBoba || finalMaul === finalPadme || finalMaul == finalJar){
-                charData = data[8];
-            }
-            else if(finalKylo === finalMando || finalKylo === finalBoba || finalKylo === finalPadme || finalKylo === finalJar){
-                charData = data[9];
-            }
-            else if(finalMando === finalBoba || finalMando === finalPadme || finalMando === finalJar){
-                charData = data[10];
-            }
-            else if(finalBoba === finalJar || finalBoba === finalPadme){
+            else if(finalBoba === finalJar){
                 charData = data[5];
-            }
-            else if(finalPadme === finalJar){
-                charData = data[11];
             }
             mainBody.innerHTML = `
             <section>
