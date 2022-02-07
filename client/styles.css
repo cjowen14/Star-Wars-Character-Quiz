@@ -5,34 +5,26 @@ body{
     background-image: url(../images/New-Stars.jpg);
 }
 
-header{
-    background-color: gray;
-    background-image: url(../Images/New-Stars.jpg);
-    height: 14vh;
-    margin: 0;
-    width: 100vw;
-}
-
 footer{
     height: 14vh;
     width: 100vw;
 }
 
 header nav{
-    margin-top: 2vh;
-    float: right;
+    display: flex;
+    margin-top: 0px;
+    align-items: baseline;
 }
 
 header nav h3 {
-    font-size: 1.4vw;
-    display: inline;
-    margin: 1.5vw;
+    font-size: 25px;
+    margin: 25px;
     color: white;
 }
 
 #title{
-    margin-right: 18vw;
-    font-size: 2.5vw;
+    margin-right: 400px;
+    font-size: 50px;
     color: #fce027ff;
 }
 
@@ -46,8 +38,8 @@ h3 a{
 }
 
 #logo{
-    width: 10%;
-    height: 5%;
+    width: 200px;
+    height: 92px;
 }
 
 #chars:hover{
@@ -89,32 +81,36 @@ h3 a{
     margin-top: 10vh;
 }
 
-#first-row{
+#roster{
     display: inline;
-    width: 80vw;
-    height: 50vh;
 }
 
-#second-row{
-    display: inline;
-    width: 80vw;
-    height: 50vh;
-    margin-top: 100px;
+.roster-name{
+    color: #fce027ff;
+    text-align: center;
+    margin-left: 25%;
 }
 
 .character{
     display: inline-block;
-    width: 26%;
+    width: 15%;
     height: 100%;
-    margin-left: 6%;
+    margin-left: 7.25%;
     margin-top: 10vh;
 }
 
 .char-pic{
-    width: 20vw;
-    margin-left: 2%;
-    margin-top: 2%;
-    height: 25vh;
+    width: 100%;
+    height: 100px;
+}
+
+@media(min-width: 1200px){
+    .char-pic{
+        width: 120%;
+        margin-left: 2%;
+        margin-top: 2%;
+        height: 220px;
+    }
 }
 
 .char-pic:hover{
@@ -140,12 +136,11 @@ h3 a{
 .quiz-card{
     padding: 2%;
     background-image: url(../images/New-Stars.jpg);
-    border: 8px #fce027ff dashed;
     color: white;
     width: 30vw;
     height: 75vh;
     margin-left: 32%;
-    margin-top: 6vh;
+    margin-top: 4vh;
     padding-top: 0.5%;
     padding-bottom: 0;
 }
@@ -158,16 +153,16 @@ h3 a{
 #question-heading{
     font-size: 300%;
     text-align: center;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
     margin-top: 1vh;
 }
 
 .answer-box{
-    width: 12vw;
-    height: 20vh;
+    width: 13vw;
+    height: 21vh;
     display: inline-block;
     margin-bottom: 8%;
-    margin-left: 6%;
+    margin-left: 4%;
     margin-top: 0;
 }
 
@@ -189,15 +184,19 @@ h3 a{
     font-size: 200%;
     text-align: center;
     border-radius: 50%;
+    font-weight: bolder;
 }
 
 .answer-text{
     margin-top: 0vh;
     text-align: center;
+    color: #fce027ff;
 }
 
 .selected{
-    border: rgb(16, 196, 16) 8px solid;
+    border: rgb(16, 196, 16) 5px solid;
+    width: 95%;
+    height: 95%;
 }
 
 
@@ -225,6 +224,10 @@ h3 a{
     display: inline-block;
     margin-right: 1vw;
     color: #fce027ff;
+}
+
+.big-bio-white{
+    color: white;
 }
 
 
@@ -290,6 +293,13 @@ h3 a{
 
 
 /* Your characters */
+.your-char{
+    display: inline-block;
+    width: 26%;
+    height: 100%;
+    margin-left: 6%;
+    margin-top: 10vh;
+}
 .your-pic{
     width: 20vw;
     margin-left: 2%;
@@ -302,35 +312,34 @@ h3 a{
 }
 
 .options{
-    /* background-color: red; */
     display: inline;
     height: 50vh;
 }
  
 .delete,.change{
     margin-left: 4vw;
-    margin-top: 2vh; 
+    margin-top: 1vh; 
     width: 4vw;
     height: 3vh;
     color: #fce027ff;
+    background-color: grey;
     background-image: url(../images/New-Stars.jpg);
-    border: white 2px solid;
-    font-size: 0.8vw;
+    border: none;
+    font-size: 1vw;
     padding-top: 0.2vw;
 } 
 
-
-
 .change{
-    margin-left: 2vw;
+    margin-right: 1vw;
+    margin-left: 4.3vw;
     width: 10vw;
     height: 3vh;
 } 
 
-.nameBox{
+/* .nameBox{
     width: 9.7vw;
-    margin-top: 2vh;
+    margin-top: 0.25vh;
     margin-left: 10vw;
     height: 2vh;
-}
+} */
 

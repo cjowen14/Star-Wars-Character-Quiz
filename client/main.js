@@ -948,18 +948,18 @@ function results(){
         .then(function(res){
             let charData = [];
             const data = res.data;
-            console.log('Total Vader: ' + finalVader);
-            console.log('Total Yoda: ' + finalYoda);
-            console.log('Total Rey: ' + finalRey);
-            console.log('Total Kenobi: ' + finalKenobi);
-            console.log('Total Jar Jar: ' + finalJar);
-            console.log('Total Boba: ' + finalBoba);
-            console.log('Total Ahsoka:' + finalAhsoka);
-            console.log('Total Han:' + finalHan);
-            console.log('Total Maul:' + finalMaul);
-            console.log('Total Kylo:' + finalKylo);
-            console.log('Total Mando:' + finalMando);
-            console.log('Total Padme:' + finalPadme);
+            // console.log('Total Vader: ' + finalVader);
+            // console.log('Total Yoda: ' + finalYoda);
+            // console.log('Total Rey: ' + finalRey);
+            // console.log('Total Kenobi: ' + finalKenobi);
+            // console.log('Total Jar Jar: ' + finalJar);
+            // console.log('Total Boba: ' + finalBoba);
+            // console.log('Total Ahsoka:' + finalAhsoka);
+            // console.log('Total Han:' + finalHan);
+            // console.log('Total Maul:' + finalMaul);
+            // console.log('Total Kylo:' + finalKylo);
+            // console.log('Total Mando:' + finalMando);
+            // console.log('Total Padme:' + finalPadme);
             if(finalVader > finalKenobi && finalVader > finalRey && finalVader > finalYoda && finalVader > finalJar && finalVader > finalBoba && finalVader > finalAhsoka && finalVader > finalKylo && finalVader > finalHan && finalVader > finalPadme && finalVader > finalMando && finalVader > finalMaul){
                 charData = data[0];
             }
@@ -979,22 +979,22 @@ function results(){
                 charData = data[5];
             }
             else if(finalAhsoka > finalVader && finalAhsoka > finalKenobi && finalAhsoka > finalRey && finalAhsoka> finalJar && finalAhsoka > finalYoda && finalAhsoka > finalBoba && finalAhsoka > finalKylo && finalAhsoka > finalHan && finalAhsoka > finalPadme && finalAhsoka > finalMando && finalAhsoka > finalMaul){
-                charData = data[6];
-            }
-            else if(finalHan > finalVader && finalHan > finalKenobi && finalHan > finalRey && finalHan > finalJar && finalHan > finalYoda && finalHan > finalAhsoka && finalHan > finalKylo && finalHan > finalBoba && finalHan > finalPadme && finalHan > finalMando && finalHan > finalMaul){
                 charData = data[7];
             }
-            else if(finalMaul > finalVader && finalMaul > finalKenobi && finalMaul > finalRey && finalMaul > finalJar && finalMaul > finalYoda && finalMaul > finalAhsoka && finalMaul > finalKylo && finalMaul > finalHan && finalMaul > finalPadme && finalMaul > finalMando && finalMaul > finalBoba){
+            else if(finalHan > finalVader && finalHan > finalKenobi && finalHan > finalRey && finalHan > finalJar && finalHan > finalYoda && finalHan > finalAhsoka && finalHan > finalKylo && finalHan > finalBoba && finalHan > finalPadme && finalHan > finalMando && finalHan > finalMaul){
                 charData = data[8];
             }
+            else if(finalMaul > finalVader && finalMaul > finalKenobi && finalMaul > finalRey && finalMaul > finalJar && finalMaul > finalYoda && finalMaul > finalAhsoka && finalMaul > finalKylo && finalMaul > finalHan && finalMaul > finalPadme && finalMaul > finalMando && finalMaul > finalBoba){
+                charData = data[11];
+            }
             else if(finalKylo > finalVader && finalKylo > finalKenobi && finalKylo > finalRey && finalKylo > finalJar && finalKylo > finalYoda && finalKylo > finalAhsoka && finalKylo > finalBoba && finalKylo > finalHan && finalKylo > finalPadme && finalKylo > finalMando && finalKylo > finalMaul){
-                charData = data[9];
+                charData = data[6];
             }
             else if(finalMando > finalVader && finalMando > finalKenobi && finalMando > finalRey && finalMando > finalJar && finalMando > finalYoda && finalMando > finalAhsoka && finalMando > finalKylo && finalMando > finalHan && finalMando > finalPadme && finalMando > finalBoba && finalMando > finalMaul){
                 charData = data[10];
             }
             else if(finalPadme > finalVader && finalPadme > finalKenobi && finalPadme > finalRey && finalPadme > finalJar && finalPadme > finalYoda && finalPadme > finalAhsoka && finalPadme > finalKylo && finalPadme > finalHan && finalPadme > finalBoba && finalPadme > finalMando && finalPadme > finalMaul){
-                charData = data[11];
+                charData = data[9];
             }
             else if(finalYoda === finalVader || finalYoda === finalKenobi || finalYoda === finalRey || finalYoda === finalJar || finalYoda === finalBoba || finalYoda === finalKylo || finalYoda === finalAhsoka || finalYoda === finalHan || finalYoda === finalPadme || finalYoda === finalMando || finalYoda === finalMaul){
                 charData = data[4];
@@ -1009,16 +1009,16 @@ function results(){
                 charData = data[2];
             }
             else if(finalAhsoka === finalHan || finalAhsoka === finalMaul || finalAhsoka === finalKylo || finalAhsoka === finalMando || finalAhsoka === finalBoba || finalAhsoka === finalPadme || finalAhsoka === finalJar){
-                charData = data[6];
-            }
-            else if(finalHan === finalMaul || finalHan === finalKylo || finalHan === finalMando || finalHan === finalBoba || finalHan === finalPadme || finalHan === finalJar){
                 charData = data[7];
             }
-            else if(finalMaul === finalKylo || finalMaul ===  finalMando || finalMaul === finalBoba || finalMaul === finalPadme || finalMaul == finalJar){
+            else if(finalHan === finalMaul || finalHan === finalKylo || finalHan === finalMando || finalHan === finalBoba || finalHan === finalPadme || finalHan === finalJar){
                 charData = data[8];
             }
+            else if(finalMaul === finalKylo || finalMaul ===  finalMando || finalMaul === finalBoba || finalMaul === finalPadme || finalMaul == finalJar){
+                charData = data[11];
+            }
             else if(finalKylo === finalMando || finalKylo === finalBoba || finalKylo === finalPadme || finalKylo === finalJar){
-                charData = data[9];
+                charData = data[6];
             }
             else if(finalMando === finalBoba || finalMando === finalPadme || finalMando === finalJar){
                 charData = data[10];
@@ -1027,7 +1027,7 @@ function results(){
                 charData = data[5];
             }
             else if(finalPadme === finalJar){
-                charData = data[11];
+                charData = data[9];
             }
             mainBody.innerHTML = `
             <section>
@@ -1062,6 +1062,7 @@ function results(){
 
 //return to home screen and reset quiz when home text/logo is clicked
 function clickHome (){
+    //reset counter for next attempt
     index = 0;
     question = 1;
     finalVader = 0;
@@ -1070,6 +1071,12 @@ function clickHome (){
     finalYoda = 0;
     finalJar=0;
     finalBoba = 0;
+    finalAhsoka = 0;
+    finalHan = 0;
+    finalMaul = 0;
+    finalKylo = 0;
+    finalMando = 0;
+    finalPadme = 0;
     mainBody.innerHTML = `
     <section id="main-body">
         <h1 id="take">Take The Quiz To Find Out!</h1>
@@ -1089,34 +1096,18 @@ function roster(){
         const data = res.data;
         mainBody.innerHTML = `<h2 id="roster-header">Character Roster!</h2>`;
         for(let i = 0; i< data.length; i++){
-            if(i<=2){
                 mainBody.innerHTML = 
-                `<section id="first-row">
+                `<section id="roster">
                 ${mainBody.innerHTML}
                 <div class="character">
                     <img 
                         class="char-pic"
                         src = ${data[i].image}
                         alt="">
-                <div class="break"></div>
-                <h3 class="bio">${data[i].name}</h3>
+                        <h2 class="roster-name">${data[i].name}</h2>
             </div>
-            </section>`
-            }
-            else if(i<=5){
-                mainBody.innerHTML = `
-                <section id="second-row">
-                ${mainBody.innerHTML}
-                <div class="character">
-                    <img 
-                        class="char-pic"
-                        src = ${data[i].image}
-                        alt="">
-                    <div class="break"></div>
-                    <h3 class="bio">${data[i].name}</h3>
-                </div>
-                </section>`
-            }   
+            
+            </section>` 
         }
         //allow for user to click on a character to view their bio page
         const bioButton = document.querySelectorAll('.char-pic');
@@ -1144,21 +1135,21 @@ function bio(id){
             <img src="${data[0].image}" id="the-pic" alt="">
         </section>
         <section id="bio-info">
-            <h2 class="big-bio">Name:</h2> <h3 class="big-bio">${data[0].name}</h3>
+            <h2 class="big-bio big-bio-white">Name:</h2> <h3 class="big-bio">${data[0].name}</h3>
             <div class="break"></div>
-            <h2 class="big-bio">Homeworld:</h2> <h3 class="big-bio">${data[0].planet}</h3>
+            <h2 class="big-bio">Homeworld:</h2> <h3 class="big-bio big-bio-white">${data[0].planet}</h3>
             <div class="break"></div>
-            <h2 class="big-bio">Hair Color:</h2> <h3 class="big-bio">${data[0].hair}</h3>
+            <h2 class="big-bio big-bio-white">Hair Color:</h2> <h3 class="big-bio">${data[0].hair}</h3>
             <div class="break"></div>
-            <h2 class="big-bio">Weapon:</h2> <h3 class="big-bio">${data[0].weapon}</h3>
+            <h2 class="big-bio">Weapon:</h2> <h3 class="big-bio big-bio-white">${data[0].weapon}</h3>
             <div class="break"></div>
-            <h2 class="big-bio">Birth Year:</h2> <h3 class="big-bio">${data[0].birthday}</h3>
+            <h2 class="big-bio big-bio-white">Birth Year:</h2> <h3 class="big-bio">${data[0].birthday}</h3>
             <div class="break"></div>
-            <h2 class="big-bio">Most Famous Movie:</h2> <h3 class="big-bio">${data[0].movie}</h3> 
+            <h2 class="big-bio">Most Famous Movie:</h2> <h3 class="big-bio big-bio-white">${data[0].movie}</h3> 
             <div class="break"></div>
-            <h2 class="big-bio">Height:</h2> <h3 class="big-bio">${data[0].height}</h3> 
+            <h2 class="big-bio big-bio-white">Height:</h2> <h3 class="big-bio">${data[0].height}</h3> 
             <div class="break"></div>
-            <h2 class="big-bio">Vehicle:</h2> <h3 class="big-bio">${data[0].vehicle}</h3> 
+            <h2 class="big-bio">Vehicle:</h2> <h3 class="big-bio big-bio-white">${data[0].vehicle}</h3> 
         </section>`
     })
 }
@@ -1194,33 +1185,11 @@ function listQuestions(){
 function yourCharacters (data,name){
     mainBody.innerHTML = `<h2 id="roster-header">Your Characters!</h2>`;
     for(let i = 0; i < charStorage.length; i++){
-      if(name === charStorage[i].name){
+      if(name !== charStorage[i].name){
           mainBody.innerHTML = 
-          `<section id="first-row">
+          `<section id="roster">
           ${mainBody.innerHTML}
-          <div class="character">
-          <img
-              class="your-pic"
-              src=${charStorage[i].image}
-              alt="">
-          <div class="break"></div>
-          <h3 class="bio">${data}</h3>
-          <div class="options">
-              <button class="delete">DELETE</h3>
-              <button class="change">Change Name</h3>
-          </div>
-          <div>
-              <input type = "text" class="nameBox"></input>
-          </div>
-          
-          </div>
-          </section>`
-      }
-      else{
-          mainBody.innerHTML = 
-          `<section id="first-row">
-          ${mainBody.innerHTML}
-          <div class="character">
+          <div class="your-char">
           <img
               class="your-pic"
               src=${charStorage[i].image}
@@ -1229,10 +1198,32 @@ function yourCharacters (data,name){
           <h3 class="bio">${charStorage[i].name}</h3>
           <div class="options">
               <button class="delete">DELETE</h3>
-              <button class="change">Change Name</h3>
           </div>
           <div>
-              <input type = "text" class="nameBox"></input>
+            <label for="changeName" class="change">Change Name</label>
+            <input type = "text" name="changeName" class="nameBox"></input>
+          </div>
+          
+          </div>
+          </section>`
+      }
+      else{
+          mainBody.innerHTML = 
+          `<section id="roster">
+          ${mainBody.innerHTML}
+          <div class="your-char">
+          <img
+              class="your-pic"
+              src=${charStorage[i].image}
+              alt="">
+          <div class="break"></div>
+          <h3 class="bio">${data}</h3>
+          <div class="options">
+              <button class="delete">DELETE</h3>
+          </div>
+          <div>
+            <label for="changeName" class="change">Change Name</label>
+            <input type = "text" name="changeName" class="nameBox"></input>
           </div>
           
           </div>
@@ -1250,11 +1241,11 @@ function yourCharacters (data,name){
             });
         }
 
-        //change name to random name
+        //change name to a different name
         for(let r = 0; r < changeBtn.length; r++){
             let name = charStorage[r].name;
             changeBtn[r].addEventListener('click', function(){
-                changeName(name);
+                changeName(name,r);
             })
         }
 
@@ -1284,21 +1275,21 @@ function yourBio(image){
             <img src="${data[0].image}" id="the-pic" alt="">
         </section>
         <section id="bio-info">
-            <h2 class="big-bio">Name:</h2> <h3 class="big-bio">${data[0].name}</h3>
+            <h2 class="big-bio big-bio-white">Name:</h2> <h3 class="big-bio">${data[0].name}</h3>
             <div class="break"></div>
-            <h2 class="big-bio">Homeworld:</h2> <h3 class="big-bio">${data[0].planet}</h3>
+            <h2 class="big-bio">Homeworld:</h2> <h3 class="big-bio big-bio-white">${data[0].planet}</h3>
             <div class="break"></div>
-            <h2 class="big-bio">Hair Color:</h2> <h3 class="big-bio">${data[0].hair}</h3>
+            <h2 class="big-bio big-bio-white">Hair Color:</h2> <h3 class="big-bio">${data[0].hair}</h3>
             <div class="break"></div>
-            <h2 class="big-bio">Weapon:</h2> <h3 class="big-bio">${data[0].weapon}</h3>
+            <h2 class="big-bio">Weapon:</h2> <h3 class="big-bio big-bio-white">${data[0].weapon}</h3>
             <div class="break"></div>
-            <h2 class="big-bio">Birth Year:</h2> <h3 class="big-bio">${data[0].birthday}</h3>
+            <h2 class="big-bio big-bio-white">Birth Year:</h2> <h3 class="big-bio">${data[0].birthday}</h3>
             <div class="break"></div>
-            <h2 class="big-bio">Most Famous Movie:</h2> <h3 class="big-bio">${data[0].movie}</h3> 
+            <h2 class="big-bio">Most Famous Movie:</h2> <h3 class="big-bio big-bio-white">${data[0].movie}</h3> 
             <div class="break"></div>
-            <h2 class="big-bio">Height:</h2> <h3 class="big-bio">${data[0].height}</h3> 
+            <h2 class="big-bio big-bio-white">Height:</h2> <h3 class="big-bio">${data[0].height}</h3> 
             <div class="break"></div>
-            <h2 class="big-bio">Vehicle:</h2> <h3 class="big-bio">${data[0].vehicle}</h3> 
+            <h2 class="big-bio">Vehicle:</h2> <h3 class="big-bio big-bio-white">${data[0].vehicle}</h3> 
         </section>`
     })
 }
@@ -1311,7 +1302,6 @@ function deleteChar(name){
     .delete(`http://localhost:4040/api/${name}`)
     .then(function(res){
         const data = res.data;
-        console.log(data);
         for(let i = 0; i < charStorage.length; i++){
             if(data[0].name === charStorage[i].name){
                 charStorage.splice(i,1);
@@ -1325,20 +1315,19 @@ function deleteChar(name){
 
 //change name of character
 //dosen't update database thus name doesn't save
-function changeName(name){
-    const newName = document.querySelectorAll('.nameBox');
-    for(let i = 0; i < newName.length; i++){
-        const newNameValue = newName[i].value;
+function changeName(name, r){
+    let newNames = document.querySelectorAll('.nameBox');
+    let newNameValue = newNames[r].value;
+    console.log(newNameValue);
         let bodyObj = {
             newNameValue
         }
         axios
         .put(`http://localhost:4040/api/${name}`, bodyObj)
         .then(function(res){
-            const data = res.data;
+            data = res.data;
             yourCharacters(data,name);      
         })
-    } 
 }
 
 

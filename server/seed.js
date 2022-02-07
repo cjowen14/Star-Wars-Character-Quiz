@@ -13,6 +13,7 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
     }
 })
 
+//characters table was created in pgweb
 module.exports = {
     seed: (req, res) => {
         sequelize.query(`

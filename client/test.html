@@ -17,25 +17,25 @@
         </nav>
     </header>
 
-    <h2 id="roster-header">Your Characters!</h2>;
-
-      <section id="first-row">
-      <div class="character">
-      <img
-          class="your-pic"
-          src='../images/Rey.jpg'
-          alt="">
-      <div class="break"></div>
-      <h3 class="bio">Rey Skywalker</h3>
-      <div class="options">
-        <button class="delete">DELETE</h3><br><br>
-        <button class="change">Change Name</h3><br><br><br>
-      </div>
-      <div>
-          <input type = "text" class="nameBox"></input>
-      </div>    
-  </div>
-  </section>
+    <section id="roster">
+        ${mainBody.innerHTML}
+        <div class="your-char">
+        <img
+            class="your-pic"
+            src=${charStorage[i].image}
+            alt="">
+        <div class="break"></div>
+        <h3 class="bio">${charStorage[i].name}</h3>
+        <div class="options">
+            <button class="delete">DELETE</h3>
+        </div>
+        <div>
+        <label for="changeName" class="change">Change Name</label>
+        <input type = "text" name="changeName" class="nameBox"></input>
+        </div>
+        
+        </div>
+        </section>
   
    
     <footer>
