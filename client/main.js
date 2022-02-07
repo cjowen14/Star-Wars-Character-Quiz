@@ -931,6 +931,20 @@ function counter(i){
 
 
 //display results of quiz after finish button is clicked
+//character hierarchy:
+//  YODA     
+//  OBI-WAN
+//  VADER
+//  REY
+//  ASHOKA
+//  HAN
+//  MAUL
+//  KYLO
+//  MANDO
+//  BOBA
+//  PADME
+//  JAR JAR
+
 function results(){
     let choice = document.querySelectorAll(".answer-pic");
     let choiceCounter = 0;
@@ -946,88 +960,74 @@ function results(){
         axios
         .get('http://localhost:4040/api/results')
         .then(function(res){
+            let counterArray = [];
             let charData = [];
+            let winnerCounter = 0;
+            let winnerPosition = 0;
             const data = res.data;
-            // console.log('Total Vader: ' + finalVader);
-            // console.log('Total Yoda: ' + finalYoda);
-            // console.log('Total Rey: ' + finalRey);
-            // console.log('Total Kenobi: ' + finalKenobi);
-            // console.log('Total Jar Jar: ' + finalJar);
-            // console.log('Total Boba: ' + finalBoba);
-            // console.log('Total Ahsoka:' + finalAhsoka);
-            // console.log('Total Han:' + finalHan);
-            // console.log('Total Maul:' + finalMaul);
-            // console.log('Total Kylo:' + finalKylo);
-            // console.log('Total Mando:' + finalMando);
-            // console.log('Total Padme:' + finalPadme);
-            if(finalVader > finalKenobi && finalVader > finalRey && finalVader > finalYoda && finalVader > finalJar && finalVader > finalBoba && finalVader > finalAhsoka && finalVader > finalKylo && finalVader > finalHan && finalVader > finalPadme && finalVader > finalMando && finalVader > finalMaul){
-                charData = data[0];
-            }
-            else if(finalKenobi > finalVader && finalKenobi > finalRey && finalKenobi > finalYoda && finalKenobi > finalJar && finalKenobi > finalBoba && finalKenobi > finalAhsoka && finalKenobi > finalKylo && finalKenobi > finalHan && finalKenobi > finalPadme && finalKenobi > finalMando && finalKenobi > finalMaul){
-                charData = data[1];
-            }
-            else if(finalRey > finalVader && finalRey > finalKenobi && finalRey > finalYoda && finalRey > finalJar && finalRey > finalBoba && finalRey > finalAhsoka && finalRey > finalKylo && finalRey > finalHan && finalRey > finalPadme && finalRey > finalMando && finalRey > finalMaul){
-                charData = data[2];
-            }
-            else if(finalJar > finalVader && finalJar > finalKenobi && finalJar > finalRey && finalJar > finalYoda && finalJar > finalBoba && finalJar > finalAhsoka && finalJar > finalKylo && finalJar > finalHan && finalJar > finalPadme && finalJar > finalMando && finalJar > finalMaul){
-                charData = data[3];
-            }
-            else if(finalYoda > finalVader && finalYoda > finalKenobi && finalYoda > finalRey && finalYoda > finalJar && finalYoda > finalBoba && finalYoda > finalAhsoka && finalYoda > finalKylo && finalYoda > finalHan && finalYoda > finalPadme && finalYoda > finalMando && finalYoda > finalMaul){
-                charData = data[4];
-            }
-            else if(finalBoba > finalVader && finalBoba > finalKenobi && finalBoba > finalRey && finalBoba > finalJar && finalBoba > finalYoda && finalBoba > finalAhsoka && finalBoba > finalKylo && finalBoba > finalHan && finalBoba > finalPadme && finalBoba > finalMando && finalBoba > finalMaul){
-                charData = data[5];
-            }
-            else if(finalAhsoka > finalVader && finalAhsoka > finalKenobi && finalAhsoka > finalRey && finalAhsoka> finalJar && finalAhsoka > finalYoda && finalAhsoka > finalBoba && finalAhsoka > finalKylo && finalAhsoka > finalHan && finalAhsoka > finalPadme && finalAhsoka > finalMando && finalAhsoka > finalMaul){
-                charData = data[7];
-            }
-            else if(finalHan > finalVader && finalHan > finalKenobi && finalHan > finalRey && finalHan > finalJar && finalHan > finalYoda && finalHan > finalAhsoka && finalHan > finalKylo && finalHan > finalBoba && finalHan > finalPadme && finalHan > finalMando && finalHan > finalMaul){
-                charData = data[8];
-            }
-            else if(finalMaul > finalVader && finalMaul > finalKenobi && finalMaul > finalRey && finalMaul > finalJar && finalMaul > finalYoda && finalMaul > finalAhsoka && finalMaul > finalKylo && finalMaul > finalHan && finalMaul > finalPadme && finalMaul > finalMando && finalMaul > finalBoba){
-                charData = data[11];
-            }
-            else if(finalKylo > finalVader && finalKylo > finalKenobi && finalKylo > finalRey && finalKylo > finalJar && finalKylo > finalYoda && finalKylo > finalAhsoka && finalKylo > finalBoba && finalKylo > finalHan && finalKylo > finalPadme && finalKylo > finalMando && finalKylo > finalMaul){
-                charData = data[6];
-            }
-            else if(finalMando > finalVader && finalMando > finalKenobi && finalMando > finalRey && finalMando > finalJar && finalMando > finalYoda && finalMando > finalAhsoka && finalMando > finalKylo && finalMando > finalHan && finalMando > finalPadme && finalMando > finalBoba && finalMando > finalMaul){
-                charData = data[10];
-            }
-            else if(finalPadme > finalVader && finalPadme > finalKenobi && finalPadme > finalRey && finalPadme > finalJar && finalPadme > finalYoda && finalPadme > finalAhsoka && finalPadme > finalKylo && finalPadme > finalHan && finalPadme > finalBoba && finalPadme > finalMando && finalPadme > finalMaul){
-                charData = data[9];
-            }
-            else if(finalYoda === finalVader || finalYoda === finalKenobi || finalYoda === finalRey || finalYoda === finalJar || finalYoda === finalBoba || finalYoda === finalKylo || finalYoda === finalAhsoka || finalYoda === finalHan || finalYoda === finalPadme || finalYoda === finalMando || finalYoda === finalMaul){
-                charData = data[4];
-            }
-            else if(finalKenobi === finalVader || finalKenobi === finalRey || finalKenobi === finalJar || finalKenobi === finalBoba || finalKenobi === finalKylo || finalKenobi === finalAhsoka || finalKenobi === finalHan || finalKenobi === finalPadme || finalKenobi === finalMando || finalKenobi === finalMaul){
-                charData = data[1];
-            }
-            else if(finalVader === finalJar || finalVader === finalBoba || finalVader === finalRey || finalVader === finalKylo || finalVader === finalAhsoka || finalVader === finalHan || finalVader === finalPadme || finalVader === finalMando || finalVader === finalMaul){
-                charData = data[0];
-            }
-            else if(finalRey === finalJar || finalRey === finalBoba || finalRey === finalKylo || finalRey === finalAhsoka || finalRey === finalHan || finalRey === finalPadme || finalRey === finalMando || finalRey === finalMaul){
-                charData = data[2];
-            }
-            else if(finalAhsoka === finalHan || finalAhsoka === finalMaul || finalAhsoka === finalKylo || finalAhsoka === finalMando || finalAhsoka === finalBoba || finalAhsoka === finalPadme || finalAhsoka === finalJar){
-                charData = data[7];
-            }
-            else if(finalHan === finalMaul || finalHan === finalKylo || finalHan === finalMando || finalHan === finalBoba || finalHan === finalPadme || finalHan === finalJar){
-                charData = data[8];
-            }
-            else if(finalMaul === finalKylo || finalMaul ===  finalMando || finalMaul === finalBoba || finalMaul === finalPadme || finalMaul == finalJar){
-                charData = data[11];
-            }
-            else if(finalKylo === finalMando || finalKylo === finalBoba || finalKylo === finalPadme || finalKylo === finalJar){
-                charData = data[6];
-            }
-            else if(finalMando === finalBoba || finalMando === finalPadme || finalMando === finalJar){
-                charData = data[10];
-            }
-            else if(finalBoba === finalJar || finalBoba === finalPadme){
-                charData = data[5];
-            }
-            else if(finalPadme === finalJar){
-                charData = data[9];
+            counterArray.push(finalVader, finalKenobi, finalRey, finalJar, finalYoda, finalBoba, finalKylo, finalAhsoka, finalHan, finalPadme, finalMando, finalMaul);
+
+            console.log(counterArray);
+            console.log('Total Vader: ' + finalVader);
+            console.log('Total Yoda: ' + finalYoda);
+            console.log('Total Rey: ' + finalRey);
+            console.log('Total Kenobi: ' + finalKenobi);
+            console.log('Total Jar Jar: ' + finalJar);
+            console.log('Total Boba: ' + finalBoba);
+            console.log('Total Ahsoka:' + finalAhsoka);
+            console.log('Total Han:' + finalHan);
+            console.log('Total Maul:' + finalMaul);
+            console.log('Total Kylo:' + finalKylo);
+            console.log('Total Mando:' + finalMando);
+            console.log('Total Padme:' + finalPadme);
+
+            //Determine winner
+            for(let i = 0; i < counterArray.length; i++){
+                if(counterArray[i] > winnerCounter){
+                    winnerCounter = counterArray[i];
+                    winnerPosition = i;
+                    charData = data[winnerPosition];
+                }
+                //if characters end in a tie (see hierarchy above)
+                else if (counterArray[i] === winnerCounter){
+                        console.log(winnerPosition);
+                        if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[4]){
+                            charData = data[4];
+                        }
+                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[1]){
+                            charData = data[1];
+                        }
+                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[0]){
+                            charData = data[0];
+                        }
+                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[2]){
+                            charData = data[2];
+                        }
+                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[7]){
+                            charData = data[7];
+                        }
+                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[8]){
+                            charData = data[8];
+                        }
+                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[11]){
+                            charData = data[11];
+                        }
+                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[6]){
+                            charData = data[6];
+                        }
+                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[10]){
+                            charData = data[10];
+                        }
+                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[5]){
+                            charData = data[5];
+                        }
+                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[9]){
+                            charData = data[9];
+                        }
+                        else{
+                            charData = data[3];
+                        }
+                }
             }
             mainBody.innerHTML = `
             <section>
@@ -1135,19 +1135,19 @@ function bio(id){
             <img src="${data[0].image}" id="the-pic" alt="">
         </section>
         <section id="bio-info">
-            <h2 class="big-bio big-bio-white">Name:</h2> <h3 class="big-bio">${data[0].name}</h3>
+            <h2 class="big-bio">Name:</h2> <h3 class="big-bio big-bio-white">${data[0].name}</h3>
             <div class="break"></div>
             <h2 class="big-bio">Homeworld:</h2> <h3 class="big-bio big-bio-white">${data[0].planet}</h3>
             <div class="break"></div>
-            <h2 class="big-bio big-bio-white">Hair Color:</h2> <h3 class="big-bio">${data[0].hair}</h3>
+            <h2 class="big-bio">Hair Color:</h2> <h3 class="big-bio big-bio-white">${data[0].hair}</h3>
             <div class="break"></div>
             <h2 class="big-bio">Weapon:</h2> <h3 class="big-bio big-bio-white">${data[0].weapon}</h3>
             <div class="break"></div>
-            <h2 class="big-bio big-bio-white">Birth Year:</h2> <h3 class="big-bio">${data[0].birthday}</h3>
+            <h2 class="big-bio">Birth Year:</h2> <h3 class="big-bio big-bio-white">${data[0].birthday}</h3>
             <div class="break"></div>
             <h2 class="big-bio">Most Famous Movie:</h2> <h3 class="big-bio big-bio-white">${data[0].movie}</h3> 
             <div class="break"></div>
-            <h2 class="big-bio big-bio-white">Height:</h2> <h3 class="big-bio">${data[0].height}</h3> 
+            <h2 class="big-bio">Height:</h2> <h3 class="big-bio big-bio-white">${data[0].height}</h3> 
             <div class="break"></div>
             <h2 class="big-bio">Vehicle:</h2> <h3 class="big-bio big-bio-white">${data[0].vehicle}</h3> 
         </section>`
@@ -1275,19 +1275,19 @@ function yourBio(image){
             <img src="${data[0].image}" id="the-pic" alt="">
         </section>
         <section id="bio-info">
-            <h2 class="big-bio big-bio-white">Name:</h2> <h3 class="big-bio">${data[0].name}</h3>
+            <h2 class="big-bio">Name:</h2> <h3 class="big-bio big-bio-white">${data[0].name}</h3>
             <div class="break"></div>
             <h2 class="big-bio">Homeworld:</h2> <h3 class="big-bio big-bio-white">${data[0].planet}</h3>
             <div class="break"></div>
-            <h2 class="big-bio big-bio-white">Hair Color:</h2> <h3 class="big-bio">${data[0].hair}</h3>
+            <h2 class="big-bio">Hair Color:</h2> <h3 class="big-bio big-bio-white'>${data[0].hair}</h3>
             <div class="break"></div>
             <h2 class="big-bio">Weapon:</h2> <h3 class="big-bio big-bio-white">${data[0].weapon}</h3>
             <div class="break"></div>
-            <h2 class="big-bio big-bio-white">Birth Year:</h2> <h3 class="big-bio">${data[0].birthday}</h3>
+            <h2 class="big-bio">Birth Year:</h2> <h3 class="big-bio big-bio-white">${data[0].birthday}</h3>
             <div class="break"></div>
             <h2 class="big-bio">Most Famous Movie:</h2> <h3 class="big-bio big-bio-white">${data[0].movie}</h3> 
             <div class="break"></div>
-            <h2 class="big-bio big-bio-white">Height:</h2> <h3 class="big-bio">${data[0].height}</h3> 
+            <h2 class="big-bio">Height:</h2> <h3 class="big-bio big-bio-white">${data[0].height}</h3> 
             <div class="break"></div>
             <h2 class="big-bio">Vehicle:</h2> <h3 class="big-bio big-bio-white">${data[0].vehicle}</h3> 
         </section>`
