@@ -1,11 +1,11 @@
-require('dotenv').config();
 const express = require('express');
 const path = require('path');
-const app = express();
 const cors = require('cors');
+require('dotenv').config();
 const{SERVER_PORT} = process.env;
-const {seed} = require('./seed.js');
+const app = express();
 const{roster, bio, questionsList, startQuiz ,nextQuestion, results, yourBio, deleteChar, changeName} = require('./controller.js');
+const {seed} = require('./seed.js');
 
 
 
