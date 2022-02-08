@@ -41,7 +41,7 @@ let charStorage = [];
 //start quiz and advance to next question
 function quizStart(){
     axios
-    .get('http://localhost:4040/api/quiz')
+    .get('/api/quiz')
     .then(function(res){
         const data = res.data;
         createQuizCard(data);
@@ -140,7 +140,7 @@ function next(){
     }
     else{
         axios
-        .get('http://localhost:4040/api/next')
+        .get('/api/next')
         .then(function(res){
             const data = res.data;
             console.log(data)
@@ -957,7 +957,7 @@ function results(){
     }
     else{
         axios
-        .get('http://localhost:4040/api/results')
+        .get('/api/results')
         .then(function(res){
             let counterArray = [];
             let charData = [];
@@ -1088,7 +1088,7 @@ function clickHome (){
 //display roster of characters
 function roster(){
     axios
-    .get("http://localhost:4040/api/characters")
+    .get("/api/characters")
     .then(function(res) {
         const data = res.data;
         mainBody.innerHTML = `<h2 id="roster-header">Character Roster!</h2>`;
@@ -1124,7 +1124,7 @@ function bio(id){
         id
     }
     axios
-    .post('http://localhost:4040/api/character-bio', bodyObj)
+    .post('/api/character-bio', bodyObj)
     .then(function(res){
         const data = res.data;
         mainBody.innerHTML = 
@@ -1156,7 +1156,7 @@ function bio(id){
 //show list of possible questions
 function listQuestions(){
     axios
-    .get('http://localhost:4040/api/questions')
+    .get('/api/questions')
     .then(function(res){
         const data = res.data;
         mainBody.innerHTML = `<h2 id="list-header">Questions List!</h2>`;
@@ -1264,7 +1264,7 @@ function yourBio(image){
         image
     }
     axios
-    .post('http://localhost:4040/api/your-character-bio', bodyObj)
+    .post('/api/your-character-bio', bodyObj)
     .then(function(res){
         const data = res.data;
         mainBody.innerHTML = 
@@ -1296,7 +1296,7 @@ function yourBio(image){
 //functionality to delete character from Your Characters list
 function deleteChar(name){
     axios
-    .delete(`http://localhost:4040/api/${name}`)
+    .delete(`/api/${name}`)
     .then(function(res){
         const data = res.data;
         for(let i = 0; i < charStorage.length; i++){
@@ -1320,7 +1320,7 @@ function changeName(name, r){
             newNameValue
         }
         axios
-        .put(`http://localhost:4040/api/${name}`, bodyObj)
+        .put(`/api/${name}`, bodyObj)
         .then(function(res){
             data = res.data;
             yourCharacters(data,name);      
