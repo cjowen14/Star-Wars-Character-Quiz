@@ -17,14 +17,14 @@ header nav{
 }
 
 header nav h3 {
-    font-size: 25px;
+    font-size: 150%;
     margin: 25px;
     color: white;
 }
 
 #title{
     margin-right: 400px;
-    font-size: 50px;
+    font-size: 300%;
     color: #fce027ff;
 }
 
@@ -251,7 +251,7 @@ h3 a{
     font-size: 3vw;
     margin-top: 10vh;
     margin-bottom: 3vw;
-    margin-left: 38vw;
+    margin-left: 39vw;
 }
 
 .list-answer{

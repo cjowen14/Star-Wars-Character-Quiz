@@ -10,7 +10,6 @@ const yourBtn = document.querySelector('#your-characters');
 let index = 0;
 let newCount = 0;
 //establish variables for the counter
-let question = 1;
 let vaderCount = 0;
 let kenobiCount = 0;
 let reyCount = 0;
@@ -54,7 +53,7 @@ function quizStart(){
 //create quiz card for each question
 function createQuizCard(data){
     //run for all questions except for the last
-    if(question < 10){
+    if(index < 9){
         mainBody.innerHTML = `
             <section class="quiz-card">
                 <h1 id="question-heading">${data[index].question}</h1>
@@ -119,7 +118,7 @@ function createQuizCard(data){
             counter(i);
             })
         }
-        //set up for when user clicks the finish button after answering the questio
+        //set up for when user clicks the finish button after answering the question
         let finalQuestion = document.querySelector('#final');
         finalQuestion.addEventListener('click', results); 
     }
@@ -144,8 +143,8 @@ function next(){
         .get('http://localhost:4040/api/next')
         .then(function(res){
             const data = res.data;
+            console.log(data)
             index++;
-            question++;
             finalVader+=vaderCount;
             finalKenobi+=kenobiCount;
             finalRey+=reyCount;
@@ -967,7 +966,6 @@ function results(){
             const data = res.data;
             counterArray.push(finalVader, finalKenobi, finalRey, finalJar, finalYoda, finalBoba, finalKylo, finalAhsoka, finalHan, finalPadme, finalMando, finalMaul);
 
-            console.log(counterArray);
             console.log('Total Vader: ' + finalVader);
             console.log('Total Yoda: ' + finalYoda);
             console.log('Total Rey: ' + finalRey);
@@ -990,43 +988,42 @@ function results(){
                 }
                 //if characters end in a tie (see hierarchy above)
                 else if (counterArray[i] === winnerCounter){
-                        console.log(winnerPosition);
-                        if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[4]){
-                            charData = data[4];
-                        }
-                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[1]){
-                            charData = data[1];
-                        }
-                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[0]){
-                            charData = data[0];
-                        }
-                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[2]){
-                            charData = data[2];
-                        }
-                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[7]){
-                            charData = data[7];
-                        }
-                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[8]){
-                            charData = data[8];
-                        }
-                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[11]){
-                            charData = data[11];
-                        }
-                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[6]){
-                            charData = data[6];
-                        }
-                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[10]){
-                            charData = data[10];
-                        }
-                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[5]){
-                            charData = data[5];
-                        }
-                        else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[9]){
-                            charData = data[9];
-                        }
-                        else{
-                            charData = data[3];
-                        }
+                    if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[4]){
+                        charData = data[4];
+                    }
+                    else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[1]){
+                        charData = data[1];
+                    }
+                    else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[0]){
+                        charData = data[0];
+                    }
+                    else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[2]){
+                        charData = data[2];
+                    }
+                    else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[7]){
+                        charData = data[7];
+                    }
+                    else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[8]){
+                        charData = data[8];
+                    }
+                    else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[11]){
+                        charData = data[11];
+                    }
+                    else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[6]){
+                        charData = data[6];
+                    }
+                    else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[10]){
+                        charData = data[10];
+                    }
+                    else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[5]){
+                        charData = data[5];
+                    }
+                    else if(winnerCounter === counterArray[i] && winnerCounter ===  counterArray[9]){
+                        charData = data[9];
+                    }
+                    else{
+                        charData = data[3];
+                    }
                 }
             }
             mainBody.innerHTML = `
@@ -1060,7 +1057,7 @@ function results(){
 
 
 
-//return to home screen and reset quiz when home text/logo is clicked
+//return to home screen and reset quiz/counter when home text/logo is clicked
 function clickHome (){
     //reset counter for next attempt
     index = 0;
@@ -1279,7 +1276,7 @@ function yourBio(image){
             <div class="break"></div>
             <h2 class="big-bio">Homeworld:</h2> <h3 class="big-bio big-bio-white">${data[0].planet}</h3>
             <div class="break"></div>
-            <h2 class="big-bio">Hair Color:</h2> <h3 class="big-bio big-bio-white'>${data[0].hair}</h3>
+            <h2 class="big-bio">Hair Color:</h2> <h3 class="big-bio big-bio-white">${data[0].hair}</h3>
             <div class="break"></div>
             <h2 class="big-bio">Weapon:</h2> <h3 class="big-bio big-bio-white">${data[0].weapon}</h3>
             <div class="break"></div>

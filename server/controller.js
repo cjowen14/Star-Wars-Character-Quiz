@@ -80,7 +80,6 @@ module.exports = {
     changeName: (req, res) =>  {
         let newName = req.body.newNameValue;
         res.status(200).send(newName);
-        
     }
 }
 
