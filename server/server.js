@@ -8,7 +8,7 @@ const {seed} = require('./seed.js');
 const{roster, bio, questionsList, startQuiz ,nextQuestion, results, yourBio, deleteChar, changeName} = require('./controller.js');
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.html'));
+    res.sendFile(path.join(__dirname, '../client/index.html'));
 })
 
 app.use(express.json());
