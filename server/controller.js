@@ -13,12 +13,6 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
     }
 })
 
-
-const questions = require('./questions.json');
-const characters = require('./chars.json');
-
-
-
 module.exports = {
     roster: (req, res) => {
         sequelize.query(`SELECT * FROM characters;`)

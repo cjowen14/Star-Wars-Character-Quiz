@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 const cors = require('cors');
 require('dotenv').config();
 const{SERVER_PORT} = process.env;
@@ -11,25 +10,6 @@ const {seed} = require('./seed.js');
 app.use(express.json());
 app.use(cors());
 
-app.get("", (req, res) => {
-    res.send("Hello World");
-})
-
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../client/index.html'));
-// })
-
-// app.get('/main', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../client/main.js'));
-// })
-
-// app.get('/styles', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../client/styles.css'));
-// })
-
-// app.get('/controller', (req, res) => {
-//     res.sendFile(path.join(__dirname, './controller.js'));
-// })
 
 app.post('/seed', seed);
 

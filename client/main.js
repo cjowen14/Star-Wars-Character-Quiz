@@ -174,7 +174,7 @@ function counter(i){
         }
     }
     //Question 1
-    if(question === 1){
+    if(index === 0){
         //First answer
         if(i === 0){
             vaderCount = 0;
@@ -247,9 +247,10 @@ function counter(i){
             reyCount++;
             hanCount++;
         }
+        console.log(finalYoda);
     }
     //Question 2
-    else if(question === 2){
+    else if(index === 1){
         //first answer
         if(i === 0){
             vaderCount = 0;
@@ -325,7 +326,7 @@ function counter(i){
         }
     }
     //Question 3
-    else if(question === 3){
+    else if(index === 2){
         //first answer
         if(i === 0){
             vaderCount = 0;
@@ -400,7 +401,7 @@ function counter(i){
         }
     }
     //Question 4
-    else if(question === 4){
+    else if(index === 3){
         //first answer
         if(i === 0){
             vaderCount = 0;
@@ -476,7 +477,7 @@ function counter(i){
         }
     }
      //Question 5
-     else if(question === 5){
+     else if(index === 4){
         //first answer
         if(i === 0){
             vaderCount = 0;
@@ -551,7 +552,7 @@ function counter(i){
         }
     }
      //Question 6
-     else if(question === 6){
+     else if(index === 5){
         //first answer
         if(i === 0){
             vaderCount = 0;
@@ -626,7 +627,7 @@ function counter(i){
         }
     }
      //Question 7
-     else if(question === 7){
+     else if(index === 6){
         //first answer
         if(i === 0){
             vaderCount = 0;
@@ -701,7 +702,7 @@ function counter(i){
         }
     }
      //Question 8
-     else if(question === 8){
+     else if(index === 7){
         //first answer
         if(i === 0){
             vaderCount = 0;
@@ -776,7 +777,7 @@ function counter(i){
         }
     }
      //Question 9
-     else if(question === 9){
+     else if(index === 8){
         //first answer
         if(i === 0){
             vaderCount = 0;
@@ -851,7 +852,7 @@ function counter(i){
         }
     }
      //Question 10
-     else if(question === 10){
+     else if(index === 9){
         //first answer
         if(i === 0){
             vaderCount = 0;
@@ -1171,6 +1172,7 @@ function listQuestions(){
                         <li class="list-answer">${data[i].answer3}</li>
                         <li class="list-answer">${data[i].answer4}</li>
                     </ul>
+                    </div>
                 </section>`            
         }
     })
