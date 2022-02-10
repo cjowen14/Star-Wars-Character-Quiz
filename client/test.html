@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
     <title>Testing Page</title>
 </head>
 <body>
@@ -18,14 +18,13 @@
     </header>
 
     <section id="roster">
-        ${mainBody.innerHTML}
         <div class="your-char">
         <img
             class="your-pic"
-            src=${charStorage[i].image}
+            src="../images/Ahsoka.jpg"
             alt="">
         <div class="break"></div>
-        <h3 class="bio">${charStorage[i].name}</h3>
+        <h3 class="bio">Ahsoka Tano</h3>
         <div class="options">
             <button class="delete">DELETE</h3>
         </div>
@@ -35,6 +34,22 @@
         </div>
         
         </div>
+        <div class="your-char">
+            <img
+                class="your-pic"
+                src="../images/Ahsoka.jpg"
+                alt="">
+            <div class="break"></div>
+            <h3 class="bio">Ahsoka Tano</h3>
+            <div class="options">
+                <button class="delete">DELETE</h3>
+            </div>
+            <div>
+            <label for="changeName" class="change">Change Name</label>
+            <input type = "text" name="changeName" class="nameBox"></input>
+            </div>
+            
+            </div>
         </section>
   
    

@@ -73,6 +73,7 @@ function createQuizCard(data){
                     <img src="${data[index].image4}" class ="answer-pic" alt="">
                     <h2 class="answer-text">${data[index].answer4}</h2>
                 </div>
+                <br>
                 <button id="next">NEXT</button>
             </section>`
         //determine which choice was selected by user, highlight choice, send choice to counter function
@@ -108,6 +109,7 @@ function createQuizCard(data){
                     <img src="${data[index].image4}" class ="answer-pic" alt="">
                     <h2 class="answer-text">${data[index].answer4}</h2>
                 </div>
+                <br>
                 <button id="final">FINISH</button>
             </section>`
         //determine which choice was selected by user, highlight choice, send choice to counter function
@@ -1129,27 +1131,29 @@ function bio(id){
     .then(function(res){
         const data = res.data;
         mainBody.innerHTML = 
-        `<section id="bio-pic">
-            <img src="${data[0].image}" id="the-pic" alt="">
-        </section>
-        <section id="bio-info">
-            <h2 class="big-bio">Name:</h2> <h3 class="big-bio big-bio-white">${data[0].name}</h3>
-            <div class="break"></div>
-            <h2 class="big-bio">Homeworld:</h2> <h3 class="big-bio big-bio-white">${data[0].planet}</h3>
-            <div class="break"></div>
-            <h2 class="big-bio">Hair Color:</h2> <h3 class="big-bio big-bio-white">${data[0].hair}</h3>
-            <div class="break"></div>
-            <h2 class="big-bio">Weapon:</h2> <h3 class="big-bio big-bio-white">${data[0].weapon}</h3>
-            <div class="break"></div>
-            <h2 class="big-bio">Birth Year:</h2> <h3 class="big-bio big-bio-white">${data[0].birthday}</h3>
-            <div class="break"></div>
-            <h2 class="big-bio">Most Famous Movie:</h2> <h3 class="big-bio big-bio-white">${data[0].movie}</h3> 
-            <div class="break"></div>
-            <h2 class="big-bio">Height:</h2> <h3 class="big-bio big-bio-white">${data[0].height}</h3> 
-            <div class="break"></div>
-            <h2 class="big-bio">Vehicle:</h2> <h3 class="big-bio big-bio-white">${data[0].vehicle}</h3> 
+        `<section id="whole-bio">
+            <section id="bio-pic">
+                <img src="${data[0].image}" id="the-pic" alt="">
+            </section>
+            <section id="bio-info">
+                <h2 class="big-bio">Name:</h2> <h3 class="big-bio big-bio-white">${data[0].name}</h3>
+                <div class="break"></div>
+                <h2 class="big-bio">Homeworld:</h2> <h3 class="big-bio big-bio-white">${data[0].planet}</h3>
+                <div class="break"></div>
+                <h2 class="big-bio">Hair Color:</h2> <h3 class="big-bio big-bio-white">${data[0].hair}</h3>
+                <div class="break"></div>
+                <h2 class="big-bio">Weapon:</h2> <h3 class="big-bio big-bio-white">${data[0].weapon}</h3>
+                <div class="break"></div>
+                <h2 class="big-bio">Birth Year:</h2> <h3 class="big-bio big-bio-white">${data[0].birthday}</h3>
+                <div class="break"></div>
+                <h2 class="big-bio">Most Famous Movie:</h2> <h3 class="big-bio big-bio-white">${data[0].movie}</h3> 
+                <div class="break"></div>
+                <h2 class="big-bio">Height:</h2> <h3 class="big-bio big-bio-white">${data[0].height}</h3> 
+                <div class="break"></div>
+                <h2 class="big-bio">Vehicle:</h2> <h3 class="big-bio big-bio-white">${data[0].vehicle}</h3> 
+            </section>
         </section>`
-    })
+    })      
 }
 
 
@@ -1270,25 +1274,27 @@ function yourBio(image){
     .then(function(res){
         const data = res.data;
         mainBody.innerHTML = 
-        `<section id="bio-pic">
-            <img src="${data[0].image}" id="the-pic" alt="">
-        </section>
-        <section id="bio-info">
-            <h2 class="big-bio">Name:</h2> <h3 class="big-bio big-bio-white">${data[0].name}</h3>
-            <div class="break"></div>
-            <h2 class="big-bio">Homeworld:</h2> <h3 class="big-bio big-bio-white">${data[0].planet}</h3>
-            <div class="break"></div>
-            <h2 class="big-bio">Hair Color:</h2> <h3 class="big-bio big-bio-white">${data[0].hair}</h3>
-            <div class="break"></div>
-            <h2 class="big-bio">Weapon:</h2> <h3 class="big-bio big-bio-white">${data[0].weapon}</h3>
-            <div class="break"></div>
-            <h2 class="big-bio">Birth Year:</h2> <h3 class="big-bio big-bio-white">${data[0].birthday}</h3>
-            <div class="break"></div>
-            <h2 class="big-bio">Most Famous Movie:</h2> <h3 class="big-bio big-bio-white">${data[0].movie}</h3> 
-            <div class="break"></div>
-            <h2 class="big-bio">Height:</h2> <h3 class="big-bio big-bio-white">${data[0].height}</h3> 
-            <div class="break"></div>
-            <h2 class="big-bio">Vehicle:</h2> <h3 class="big-bio big-bio-white">${data[0].vehicle}</h3> 
+        `<section id="whole-bio">
+            <section id="bio-pic">
+                <img src="${data[0].image}" id="the-pic" alt="">
+            </section>
+            <section id="bio-info">
+                <h2 class="big-bio">Name:</h2> <h3 class="big-bio big-bio-white">${data[0].name}</h3>
+                <div class="break"></div>
+                <h2 class="big-bio">Homeworld:</h2> <h3 class="big-bio big-bio-white">${data[0].planet}</h3>
+                <div class="break"></div>
+                <h2 class="big-bio">Hair Color:</h2> <h3 class="big-bio big-bio-white">${data[0].hair}</h3>
+                <div class="break"></div>
+                <h2 class="big-bio">Weapon:</h2> <h3 class="big-bio big-bio-white">${data[0].weapon}</h3>
+                <div class="break"></div>
+                <h2 class="big-bio">Birth Year:</h2> <h3 class="big-bio big-bio-white">${data[0].birthday}</h3>
+                <div class="break"></div>
+                <h2 class="big-bio">Most Famous Movie:</h2> <h3 class="big-bio big-bio-white">${data[0].movie}</h3> 
+                <div class="break"></div>
+                <h2 class="big-bio">Height:</h2> <h3 class="big-bio big-bio-white">${data[0].height}</h3> 
+                <div class="break"></div>
+                <h2 class="big-bio">Vehicle:</h2> <h3 class="big-bio big-bio-white">${data[0].vehicle}</h3> 
+            </section>
         </section>`
     })
 }
