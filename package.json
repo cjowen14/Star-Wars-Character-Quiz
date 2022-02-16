@@ -1,7 +1,6 @@
 {
   "name": "personal-project",
   "version": "1.0.0",
-  "description": "",
   "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,5 +17,15 @@
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.15.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjowen14/Star-Wars-Character-Quiz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cjowen14/Star-Wars-Character-Quiz/issues"
+  },
+  "homepage": "https://github.com/cjowen14/Star-Wars-Character-Quiz#readme",
+  "description": ""
 }

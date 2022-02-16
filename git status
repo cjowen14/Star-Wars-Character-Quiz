@@ -1,0 +1,120 @@
+[33mcommit 7cfa6b8cee92ae9fc5837fa79b7bd06a8f7ac3f5[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Thu Feb 10 16:42:06 2022 -0700
+
+    Added Responsive CSS
+
+[33mcommit de9c54ebf191e61d1cac70ddcc61146c8a904049[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Wed Feb 9 10:59:36 2022 -0700
+
+    Commit for Demo Video
+
+[33mcommit 6df833569e96849498ea65589467064be496bee5[m
+Merge: 1ad34fb 7eaff11
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Tue Feb 8 11:55:46 2022 -0700
+
+    Merge branch 'main' of https://github.com/cjowen14/Star-Wars-Character-Quiz
+
+[33mcommit 1ad34fbadfd1fa1b126da4c0c498f951978afdab[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Tue Feb 8 11:55:28 2022 -0700
+
+    Deploy didn't work
+
+[33mcommit 7eaff11c694282654540c3884da55a9bba6d9bad[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Tue Feb 8 11:41:22 2022 -0700
+
+    Test for Deploy
+
+[33mcommit ee327d7c7ad114433b59539f33c255e6e6669852[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Tue Feb 8 11:33:38 2022 -0700
+
+    Deploy Fix
+
+[33mcommit 942f1affbd707f9e83c6d932a0408f645224a0fd[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Tue Feb 8 11:15:03 2022 -0700
+
+    Deploy Fix
+
+[33mcommit d880855cd3dd69574ac765b4b7efa61a9591e34c[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Tue Feb 8 11:08:47 2022 -0700
+
+    Deploy Fix
+
+[33mcommit cb00c4abf94292b2292bf0ef7945112076e2c63d[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Tue Feb 8 11:05:53 2022 -0700
+
+    Deploy Fix
+
+[33mcommit fb8515f059bbf10556c73b327a7f4c743a17033b[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Tue Feb 8 10:52:02 2022 -0700
+
+    Deploy Fix
+
+[33mcommit dc47957481a5909b527f8181a3f4aca5a7e5f0f6[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Tue Feb 8 10:46:57 2022 -0700
+
+    Deploy Fix
+
+[33mcommit 2ea030640792882a17447c1c93e29c0163c679a2[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Tue Feb 8 10:36:27 2022 -0700
+
+    Deploy Fix
+
+[33mcommit 26c2e4d1ed56c5cb61429c392f2ba19f661c8b7a[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Tue Feb 8 10:25:25 2022 -0700
+
+    Deploy fix
+
+[33mcommit 72f43ab84cfb14935b6414d005b654da6d0ad21a[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Tue Feb 8 10:22:42 2022 -0700
+
+    Deploying HTML
+
+[33mcommit 87a70362fd8367d95086a165fd1eb12f88ee4759[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Mon Feb 7 16:18:11 2022 -0700
+
+    Simplified Results Function
+
+[33mcommit ec452aa69ebc670485b656f52a6e163eb7595f09[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Mon Feb 7 14:56:49 2022 -0700
+
+    A few fixes and small additions
+
+[33mcommit b8c1bc02fc812360489b0a7da40620fb62c20cc0[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Fri Feb 4 17:22:58 2022 -0700
+
+    Cleaned up functions, added a few more
+
+[33mcommit e6edee9b27acfa495248f625531ef2eb896cbbd6[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Thu Feb 3 16:29:44 2022 -0700
+
+    Added new questions
+
+[33mcommit 99106c8c0db7304c1801b3cd97355a9688a4be2a[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Thu Feb 3 15:00:34 2022 -0700
+
+    Added more endpoints and database
+
+[33mcommit fe4ff0b23d78d9e9b7f34e58716cc363529a752b[m
+Author: Cory Owen <cjowen14@outlook.com>
+Date:   Wed Feb 2 08:59:20 2022 -0700
+
+    Initial commit
